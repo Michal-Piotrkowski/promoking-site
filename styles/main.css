@@ -47,6 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+
+@font-face {
+    font-family: "Italiana";
+    src: url("/fonts/Italiana-Regular.ttf") format("truetype");
+}
+
+
 #all-container{
     width: 100vw;
     height: 100vh;
@@ -110,6 +117,7 @@ table {
     height: auto;
     font-size: 30px;
     color: white;
+    font-family: Italiana;
 }
 
 #title-container-bottom{
@@ -126,6 +134,7 @@ table {
 #catchy-bottom-sign-cointainer{
     font-size: 40px;
     color: white;
+    font-family: Italiana;
 }
 
 #bottom-arrows-cointainer{
@@ -147,4 +156,15 @@ table {
 
 #title-container-bottom:hover  #catchy-bottom-sign-cointainer{
     color: rgb(109, 108, 108);
+}
+
+#baloon-element{
+    width: 10vw;
+    position: absolute;
+    top: 50vh;
+    left: 70vw;
+}
+
+#baloon-element img{
+    width: 100%;
 }
