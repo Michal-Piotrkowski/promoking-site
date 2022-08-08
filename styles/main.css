@@ -280,7 +280,8 @@ h2 {
 }
 
 .inspiration-font-elements {
-    color: white;
+    color: rgb(255, 255, 255);
+    text-align: center;
     font-family: Inspiration;
     font-size: 4vw;
 }
@@ -293,7 +294,7 @@ h2 {
 
 #call-container-elements {
     width: 100%;
-    height: 80%;
+    height: 100%;
     text-align: center;
 }
 
@@ -324,63 +325,52 @@ h2 {
 
 #offer-container {
     width: 100%;
-    height: 110%;
+    height: 1080px;
     background-image: url('/graphics/background-third.png');
     background-size: cover;
 }
 
 #offer-container-elements {
     width: 100%;
-    height: 100%;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 25vh);
+    justify-items: center;
     overflow: hidden;
 }
 
 #offer-container-element-1 {
-
-    position: relative;
-    top: 8rem;
-    -webkit-transform: translateY(-40%);
-    -ms-transform: translateY(-40%);
-    transform: translateY(-40%);
+    width: 100%;
+    height: 25vh;
     display: flex;
-
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-
 }
 
 
 #offer-container-element-2 {
+    width: 100%;
+    height: 25vh;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 18rem;
-    -webkit-transform: translateY(-40%);
-    -ms-transform: translateY(-40%);
-    transform: translateY(-40%);
-
+    justify-content: center;
+    align-items: center;
 }
 
 #offer-container-element-3 {
+    width: 100%;
+    height: 25vh;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 29rem;
-    -webkit-transform: translateY(-40%);
-    -ms-transform: translateY(-40%);
-    transform: translateY(-40%);
+    justify-content: center;
+    align-items: center;
 
 }
 
 #offer-container-element-4 {
+    width: 100%;
+    height: 25vh;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 39rem;
-    -webkit-transform: translateY(-40%);
-    -ms-transform: translateY(-40%);
-    transform: translateY(-40%);
+    justify-content: center;
+    align-items: center;
 
 }
 
