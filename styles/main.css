@@ -165,7 +165,7 @@ h2 {
     width: 100%;
     height: 100%;
     background-image: url('/graphics/background-first2.png');
-    background-size: contain;
+    background-size: cover;
 }
 
 #title-container-elements {
@@ -274,7 +274,7 @@ h2 {
 
 #call-container {
     width: 100%;
-    height: 35vw;
+    height: 30vw;
     background-image: url('/graphics/background-second.png');
     background-size: cover;
 }
@@ -308,26 +308,25 @@ h2 {
 
 #call-number-element {
     position: relative;
-    top: 40%;
+    top: 35%;
     -webkit-transform: translateY(-40%);
     -ms-transform: translateY(-40%);
     transform: translateY(-40%);
 }
 
 #call-to-us-slogan {
-    font-size: 6vw;
+    font-size: 5vw;
 }
 
 #number {
-    font-size: 9vw;
+    font-size: 7vw;
 
 }
 
 #offer-container {
     width: 100%;
-    height: 1080px;
-    background-image: url('/graphics/background-third.png');
-    background-size: cover;
+    height: 125%;
+
 }
 
 #offer-container-elements {
@@ -339,10 +338,22 @@ h2 {
     overflow: hidden;
 }
 
+#offer-container-element-0 {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    background-color: #240E16;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 #offer-container-element-1 {
     width: 100%;
     height: 25vh;
     display: flex;
+    background-color: #240E16;
     justify-content: center;
     align-items: center;
 }
@@ -352,6 +363,7 @@ h2 {
     width: 100%;
     height: 25vh;
     display: flex;
+    background-color: #18060D;
     justify-content: center;
     align-items: center;
 }
@@ -360,6 +372,7 @@ h2 {
     width: 100%;
     height: 25vh;
     display: flex;
+    background-color: #240E16;
     justify-content: center;
     align-items: center;
 
@@ -369,6 +382,7 @@ h2 {
     width: 100%;
     height: 25vh;
     display: flex;
+    background-color: #18060D;
     justify-content: center;
     align-items: center;
 
@@ -447,5 +461,20 @@ h2 {
     top: -8%;
     left: 46%;
     z-index: 10000;
+
+}
+
+hr {
+    border-top: 1px solid rgb(255, 255, 255) !important;
+    width: 50%;
+    height: 10px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+#why-text {
+    width: 30%;
 
 }
