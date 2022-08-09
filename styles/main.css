@@ -166,6 +166,7 @@ h2 {
     height: 100%;
     background-image: url('/graphics/background-first2.png');
     background-size: cover;
+    overflow: hidden;
 }
 
 #title-container-elements {
@@ -240,11 +241,14 @@ h2 {
 }
 
 #bottom-arrows-cointainer {
-    padding: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#bottom-arrows-cointainer span{
+    overflow: hidden;
 }
 
 .material-symbols-outlined {
@@ -344,10 +348,13 @@ hr {
 
 }
 
-.offer-images img {
-    width: 50%;
-    height: 50%;
+.offer-images{
+    text-align: center;
+    width: 60vw;
+}
 
+.offer-images img {
+    width: 10%;
 }
 
 #offer-container-elements {
@@ -363,14 +370,15 @@ hr {
 
 .offer-container-element {
     width: 100%;
-
-
     display: flex;
     background-color: #240E16;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
 
+.offer-container-element h2{
+    width: 40vw;
 }
 
 
@@ -388,27 +396,79 @@ hr {
 
 }
 
-#personalization-container {
-    width: 100%;
-    height: 110%;
-    background-image: url('/graphics/background-fourth.png');
-    background-size: cover;
-
+#dolar-element img{
+    width: 25%;
 }
 
-#bear-container-elements {
+#bear-element{
     text-align: center;
     align-items: center;
+}
 
+#bear-element img{
+    width: 15%;
+}
+
+#idea-element img{
+    width: 15%;
+}
+ 
+#personalization-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/graphics/background-fourth.png');
+    background-size: cover;
+    position: relative;
+}
+
+#bear-logo{
+    z-index: 1;
+    text-align: center;
+}
+
+#bear-container-texts{
+    z-index: 1;
+}
+
+#bear-container-line{
+    z-index: 1;
+}
+
+#circle{
+    position: absolute;
+    top: 15%;
+    left: 32.5%;
+    width: 35%;
+    z-index: 0;
+}
+
+#circle img{
+    width: 100%;
+}
+
+#title-container-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#baloon-container-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #title-container-elements {
     text-align: center;
+    margin-bottom: 3vh;
 }
 
 #title {
     font-size: 3vw;
-    padding-top: 5vw;
 }
 
 #contact-container {
@@ -458,8 +518,8 @@ hr {
 
 #or-element {
     position: absolute;
-    top: -8%;
+    overflow: visible;
+    top: -6%;
     left: 46%;
-    z-index: 10000;
-
+    z-index: 2;
 }
