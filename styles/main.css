@@ -150,6 +150,17 @@ table {
     overflow-x: hidden;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+#all-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #all-container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 h2 {
     margin: 0;
     padding: 0;
@@ -159,6 +170,7 @@ h2 {
 #all-container {
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
 }
 
 #title-container {
@@ -517,9 +529,17 @@ hr {
 }
 
 #or-element {
-    position: absolute;
+    width: 100%;
+    position: static;
+    height: 0%;
     overflow: visible;
-    top: -6%;
-    left: 46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#or-text-element{
+    margin-top: 2vh;
+    overflow: visible;
     z-index: 2;
 }
