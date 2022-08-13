@@ -543,3 +543,15 @@ hr {
     overflow: visible;
     z-index: 2;
 }
+
+#slider-container{
+    background-color:black;
+    height: 60vh;
+}
+
+.carousel-item img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
