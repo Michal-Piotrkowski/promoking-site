@@ -357,11 +357,10 @@ hr {
 
 #why-text {
     width: 30%;
-
+    overflow: visible;
 }
 
 .offer-images{
-    text-align: center;
     width: 60vw;
 }
 
@@ -408,21 +407,44 @@ hr {
 
 }
 
+#dolar-element{
+    display: flex;
+    justify-content: left;
+    padding-left: 12%;
+}
+
 #dolar-element img{
-    width: 25%;
+    width: 35%;
 }
 
 #bear-element{
-    text-align: center;
-    align-items: center;
+    display: flex;
+    justify-content: left;
+    padding-left: 15%;
 }
 
 #bear-element img{
-    width: 15%;
+    width: 25%;
+}
+
+#idea-element{
+    display: flex;
+    justify-content: right;
+    padding-right: 15%;
 }
 
 #idea-element img{
-    width: 15%;
+    width: 24%;
+}
+
+#statue-element{
+    display: flex;
+    justify-content: right;
+    padding-right: 17%;
+}
+
+#statue-element img{
+    width: 18%;
 }
  
 #personalization-container {
