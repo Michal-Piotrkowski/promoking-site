@@ -438,7 +438,7 @@ hr {
 }
 
 #idea-element img{
-    width: 24%;
+    width: 30%;
 }
 
 #statue-element{
@@ -451,22 +451,9 @@ hr {
     width: 18%;
 }
 
-
-#dolar-element img {
-    width: 25%;
-}
-
 #bear-element {
     text-align: center;
     align-items: center;
-}
-
-#bear-element img {
-    width: 15%;
-}
-
-#idea-element img {
-    width: 15%;
 }
 
 #personalization-container {
@@ -492,7 +479,6 @@ hr {
 
 #bear-logo img {
     height: 40vh;
-
 }
 
 tr #bear-container-texts {
