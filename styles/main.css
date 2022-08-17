@@ -237,11 +237,16 @@ h2 {
     font-family: Italiana;
 }
 
+
+#under-logo-slogan {
+    font-size: 2vw;
+}
+
 #title-container-bottom {
     position: absolute;
     width: 40%;
     top: 80%;
-    left: 35%;
+    left: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,9 +254,12 @@ h2 {
 }
 
 #catchy-bottom-sign-cointainer {
-    font-size: 40px;
     color: white;
     font-family: Italiana;
+}
+
+#catchy-bottom-sign {
+    font-size: 1.5vw;
 }
 
 #bottom-arrows-cointainer {
@@ -411,43 +419,43 @@ hr {
 
 }
 
-#dolar-element{
+#dolar-element {
     display: flex;
     justify-content: left;
     padding-left: 12%;
 }
 
-#dolar-element img{
+#dolar-element img {
     width: 35%;
 }
 
-#bear-element{
+#bear-element {
     display: flex;
     justify-content: left;
     padding-left: 15%;
 }
 
-#bear-element img{
+#bear-element img {
     width: 25%;
 }
 
-#idea-element{
+#idea-element {
     display: flex;
     justify-content: right;
     padding-right: 15%;
 }
 
-#idea-element img{
+#idea-element img {
     width: 30%;
 }
 
-#statue-element{
+#statue-element {
     display: flex;
     justify-content: right;
     padding-right: 17%;
 }
 
-#statue-element img{
+#statue-element img {
     width: 18%;
 }
 
