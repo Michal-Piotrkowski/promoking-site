@@ -187,6 +187,7 @@ h2 {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 #title-container-logos {
@@ -403,6 +404,9 @@ hr {
     width: 40vw;
 }
 
+#offer-container-element-0 {
+    background-color: #18060D;
+}
 
 
 #offer-container-element-2 {
@@ -475,6 +479,8 @@ hr {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 
 
 }
@@ -518,7 +524,10 @@ tr #bear-container-texts {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
+
 
 #baloon-container-elements {
     display: flex;
@@ -593,7 +602,7 @@ tr #bear-container-texts {
 }
 
 #or-text-element {
-    margin-top: 3vh;
+    margin-top: 1.5vh;
     overflow: visible;
     z-index: 2;
 }
@@ -609,3 +618,149 @@ tr #bear-container-texts {
     align-items: center;
     height: 70%;
 }
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 850px) {
+
+    #title-container {
+        width: 100%;
+        height: 100%;
+
+        background-size: cover;
+        overflow: hidden;
+
+    }
+
+    #midpoint-logo {
+        position: absolute;
+        left: 2%;
+        top: 3%;
+        width: 15%;
+        height: auto;
+    }
+
+    #logo-and-slogan-container {
+        width: 100%;
+    }
+
+    #under-logo-slogan {
+        font-size: 3.5vw;
+
+    }
+
+    #catchy-bottom-sign {
+        font-size: 3vw;
+    }
+
+    #catchy-bottom-sign {
+        background-color: rgba(14, 23, 36, 0.8);
+        padding: 3.5vw 5vw;
+        border-radius: 10vw;
+
+    }
+
+    #offer-container-elements {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 20vh);
+        justify-items: center;
+        overflow: hidden;
+
+    }
+
+    #offer-container {
+        height: 100%;
+    }
+
+    .inspiration-font-elements {
+        font-size: 4.5vw;
+    }
+
+    .offer-container-element h2 {
+        width: 70vw;
+    }
+
+    #personalization-container {
+        height: 80vh;
+        padding-bottom: 10vw;
+        padding-top: 10vw;
+    }
+
+    #title {
+        font-size: 5vw;
+    }
+
+    #contact-container {
+        height: 35vh;
+    }
+
+    #contact-text-element-2 h2 {
+        font-size: 2vh;
+    }
+
+    #contact-text-element-2 {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    #write-to-us-slogan {
+        font-size: 9vw;
+        transform: rotate(-7deg);
+    }
+
+    #bear-element img {
+        width: 40%;
+    }
+
+    #statue-element img {
+        width: 40%;
+    }
+
+    #dolar-element img {
+        width: 60%;
+    }
+
+    #idea-element img {
+        width: 45%;
+    }
+
+    #bear-container-text-2 {
+        font-size: 6vw;
+    }
+
+    #call-container {
+        height: 40vw;
+        overflow: hidden;
+    }
+
+    #call-container-elements {
+
+        height: 130%;
+        overflow: hidden;
+    }
+
+    #title-container-bottom {
+        top: 70%;
+    }
+
+
+
+
+    .material-symbols-outlined {
+
+        background-color: rgb(219, 51, 51, 0.9);
+        border-radius: 4vw;
+        padding: 1.5vw;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 550px) {}
