@@ -360,7 +360,7 @@ h2 {
 
 #offer-container {
     width: 100%;
-    height: 150%;
+    height: 149.99%;
 
 }
 
@@ -494,13 +494,11 @@ hr {
 }
 
 #bear-logo {
-
     text-align: center;
-
 }
 
 #bear-logo img {
-    height: 40vh;
+    height: 50vh;
 }
 
 tr #bear-container-texts {
@@ -508,7 +506,7 @@ tr #bear-container-texts {
 }
 
 #bear-container-texts hr {
-    margin-top: 5vw;
+    margin-top: 2vw;
     width: 40vw;
 }
 
@@ -640,6 +638,16 @@ tr #bear-container-texts {
     height: 99%;
 }
 
+.carousel-control-next{
+    background-color: #18060D;
+}
+.carousel-control-prev{
+    background-color: #18060D;
+}
+
+.sr-only{
+    color: rgb(0, 0, 0);
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 850px) {
 
