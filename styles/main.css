@@ -716,6 +716,7 @@ tr #bear-container-texts {
 
     #contact-text-element-2 {
         background-color: rgba(255, 255, 255, 0.05);
+        top: 10vh;
         padding-top: 1vh;
         padding-bottom: 1vh;
     }
@@ -761,7 +762,11 @@ tr #bear-container-texts {
     }
 
 
-
+    #circle {
+        width: 80%;
+        left: 10%;
+        top: 20%;
+    }
 
     .material-symbols-outlined {
 
@@ -977,6 +982,13 @@ tr #bear-container-texts {
 
     #contact-text-element-2 h2 {
         font-size: 5vw;
+    }
+
+
+    #circle {
+        width: 100%;
+        left: 0;
+        top: 20%;
     }
 
 
