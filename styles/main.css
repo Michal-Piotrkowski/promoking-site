@@ -620,12 +620,12 @@ tr #bear-container-texts {
     height: 50vh;
 }
 
-.carousel-inner{
+#carouselExampleControls{
     width: 100%;
     height: 100%;
 }
 
-#carouselExampleControls{
+.carousel-inner{
     width: 100%;
     height: 100%;
 }
@@ -637,7 +637,7 @@ tr #bear-container-texts {
 
 .slide-photo{
     width: 100%;
-    height: 100%;
+    height: 99%;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
