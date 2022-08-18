@@ -717,7 +717,7 @@ tr #bear-container-texts {
     #contact-text-element-2 {
         background-color: rgba(255, 255, 255, 0.05);
         position: absolute;
-        top: 50%;
+        top: 60%;
         width: 100%;
         padding-top: 1vh;
         padding-bottom: 1vh;
@@ -991,6 +991,10 @@ tr #bear-container-texts {
         width: 100%;
         left: 0;
         top: 20%;
+    }
+
+    #bear-container-texts hr {
+        width: 100%;
     }
 
 
