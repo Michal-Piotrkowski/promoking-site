@@ -642,7 +642,7 @@ tr #bear-container-texts {
     height: 99%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
 
     #title-container {
         width: 100%;
@@ -662,9 +662,13 @@ tr #bear-container-texts {
     }
 
     #logo-and-slogan-container {
-        width: 60%;
+        width: 40%;
         top: 15vh;
-        left: 20%;
+        left: 5%;
+    }
+
+    #baloon-element{
+        display: none;
     }
 
     #under-logo-slogan {
@@ -701,12 +705,23 @@ tr #bear-container-texts {
     }
 
     .inspiration-font-elements {
-
         font-size: 3.5vw;
     }
 
     #title {
         font-size: 4vw;
+    }
+
+    #bear-logo img {
+        height: 30vh;
+    }
+
+    #circle {
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        width: 60%;
+        z-index: -1;
     }
 
     #bear-container-text-1 {
@@ -904,7 +919,7 @@ tr #bear-container-texts {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
     #logo-and-slogan-container {
         width: 100%;
@@ -985,9 +1000,17 @@ tr #bear-container-texts {
         font-size: 14vw;
     }
 
-    .offer-container-element {
-        display: block;
-        width: 100%;
+    #offer-container-elements {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 20%);
+    }
+
+    .offer-container-element{
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(2, 50%);
     }
 
     #bear-element {
