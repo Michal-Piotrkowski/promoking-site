@@ -1008,24 +1008,33 @@ tr #bear-container-texts {
     }
 
     .offer-container-element{
-        display: grid;
-        grid-template-rows: 100%;
-        grid-template-columns: repeat(2, 50%);
+        display: flex;
+        flex-flow: column;
+    }
+
+    .offer-container-element h2{
+        width: 100%;
+        order: 2;
+    }
+
+    .offer-images {
+        text-align: center;
+        width: 100%;
+        order: 1;
+    }
+
+    #why-text{
+        order: 1;
+    }
+
+    .offer-container-element hr{
+        order: 2;
     }
 
     #bear-element {
         display: flex;
         justify-content: center;
         padding-left: 0;
-    }
-
-    .offer-images {
-        text-align: center;
-        width: 100%;
-    }
-
-    .offer-container-element h2 {
-        width: 100%;
     }
 
     #statue-element {
