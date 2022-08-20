@@ -541,6 +541,8 @@ tr #bear-container-texts {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-bottom: 3vh;
 }
 
 #baloon-container-elements {
