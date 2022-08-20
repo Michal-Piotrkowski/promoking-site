@@ -635,6 +635,7 @@ tr #bear-container-texts {
 .slide-item {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .slide-photo {
@@ -713,17 +714,18 @@ tr #bear-container-texts {
     }
 
     #bear-logo img {
-        height: 30vh;
+        width: 20%;
+        height: auto;
     }
 
     #circle {
         position: absolute;
-        top: 15%;
-        left: 20%;
-        width: 60%;
+        top: 20%;
+        left: 0%;
+        width: 100%;
         z-index: -1;
     }
-
+    
     #bear-container-text-1 {
         font-size: 4.5vw;
     }
@@ -733,9 +735,17 @@ tr #bear-container-texts {
     }
 
     #personalization-container {
+        height: 120vh;
+        width: 100vw;
+        
+    }
 
-        height: 100%;
+    #bear-container-texts{
+        margin-bottom: 20%;
+    }
 
+    #title-container-elements{
+        margin-top: 20%;
     }
 
     #contact-text-element-2 h2 {
@@ -867,8 +877,8 @@ tr #bear-container-texts {
         transform: rotate(-7deg);
     }
 
-    #bear-element img {
-        width: 40%;
+    #bear-logo img {
+        max-width: 80vh;
     }
 
     #statue-element img {
@@ -881,10 +891,6 @@ tr #bear-container-texts {
 
     #idea-element img {
         width: 50%;
-    }
-
-    #bear-container-text-2 {
-        font-size: 6vw;
     }
 
     #call-container {
@@ -903,10 +909,30 @@ tr #bear-container-texts {
     }
 
 
-    #circle {
-        width: 80%;
+    #personalization-container-elements{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    #circle{
+        position: absolute;
         left: 10%;
-        top: 20%;
+        top: 15%;
+        width: 80vw;
+    }
+
+    #bear-container-texts hr{
+        width: 70.5vw;
+    }
+
+    #bear-container-text-1{
+        font-size: 7.5vw;
+    }
+
+    #bear-container-text-2{
+        font-size: 7.5vw;
     }
 
     .material-symbols-outlined {
@@ -1036,6 +1062,7 @@ tr #bear-container-texts {
         text-align: center;
         width: 100%;
         order: 1;
+        overflow: hidden;
     }
 
     #why-text {
@@ -1152,17 +1179,40 @@ tr #bear-container-texts {
         font-size: 5vw;
     }
 
-
-    #circle {
-        width: 100%;
-        left: 0;
-        top: 20%;
-    }
-
     #bear-container-texts hr {
         width: 100%;
     }
 
 
+    #bear-logo img {
+        width: 40%;
+        height: auto;
+    }
+
+    #circle {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    #bear-container-text-1 {
+        font-size: 6.5vw;
+    }
+
+    #bear-container-text-2 {
+        font-size: 6vw;
+    }
+
+    #personalization-container {
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+    #bear-container-texts{
+        margin-bottom: 20%;
+    }
 
 }
