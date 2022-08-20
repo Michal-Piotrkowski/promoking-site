@@ -537,7 +537,11 @@ tr #bear-container-texts {
 
 }
 
-
+#title-container-elements-personalization{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #baloon-container-elements {
     display: flex;
