@@ -150,6 +150,10 @@ table {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 #all-container::-webkit-scrollbar {
     display: none;
@@ -238,6 +242,10 @@ h2 {
     font-family: Italiana;
 }
 
+#up {
+    text-decoration: none;
+    color: white;
+}
 
 #under-logo-slogan {
     font-size: 2vw;
@@ -261,7 +269,11 @@ h2 {
 
 #catchy-bottom-sign {
     font-size: 1.5vw;
+    border-radius: 12vw;
+    padding: 2vw;
+    background-color: rgba(14, 23, 36, 0.8);
 }
+
 
 #bottom-arrows-cointainer {
     display: flex;
@@ -283,7 +295,7 @@ h2 {
     color: rgb(109, 108, 108);
 }
 
-#title-container-bottom:hover #catchy-bottom-sign-cointainer {
+#title-container-bottom:hover #catchy-bottom-sign-cointainer h2 a {
     color: rgb(109, 108, 108);
 }
 
@@ -352,7 +364,7 @@ h2 {
 
 #offer-container {
     width: 100%;
-    height: 150%;
+    height: 149.99%;
 
 }
 
@@ -469,8 +481,8 @@ hr {
 }
 
 #personalization-container {
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
+    height: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,20 +491,18 @@ hr {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 20%;
+    padding-bottom: 20%;
 
 
 }
 
 #bear-logo {
-
     text-align: center;
-
 }
 
 #bear-logo img {
-    height: 40vh;
+    height: 50vh;
 }
 
 tr #bear-container-texts {
@@ -500,7 +510,7 @@ tr #bear-container-texts {
 }
 
 #bear-container-texts hr {
-    margin-top: 5vw;
+    margin-top: 2vw;
     width: 40vw;
 }
 
@@ -527,7 +537,13 @@ tr #bear-container-texts {
 
 }
 
-
+#title-container-elements-personalization{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3vh;
+}
 
 #baloon-container-elements {
     display: flex;
@@ -608,20 +624,32 @@ tr #bear-container-texts {
 }
 
 #slider-container {
-    background-color: black;
-    height: 60vh;
+    background-color: white;
+    height: 50vh;
 }
 
-.carousel-item img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
+#carouselExampleControls {
+    width: 100%;
+    height: 100%;
 }
 
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
 
+.slide-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
-@media only screen and (max-width: 1100px) {
+.slide-photo {
+    width: 100%;
+    height: 99%;
+}
+
+@media only screen and (max-width: 1500px) {
 
     #title-container {
         width: 100%;
@@ -636,18 +664,22 @@ tr #bear-container-texts {
         position: absolute;
         left: 2%;
         top: 3%;
-        width: 10%;
+        width: 15%;
         height: auto;
     }
 
     #logo-and-slogan-container {
-        width: 60%;
+        width: 40%;
         top: 15vh;
-        left: 20%;
+        left: 5%;
+    }
+
+    #baloon-element {
+        display: none;
     }
 
     #under-logo-slogan {
-        font-size: 2.5vw;
+        font-size: 3vw;
 
     }
 
@@ -660,18 +692,10 @@ tr #bear-container-texts {
         font-family: Italiana;
     }
 
-    #catchy-bottom-sign {
-        font-size: 2vw;
-    }
 
     #catchy-bottom-sign {
         background-color: rgba(14, 23, 36, 0.8);
-        border-radius: 12vw;
-    }
-
-    #catchy-bottom-sign {
-        background-color: rgba(14, 23, 36, 0.8);
-
+        font-size: 2.5vw;
         border-radius: 12vw;
 
     }
@@ -679,7 +703,8 @@ tr #bear-container-texts {
     .material-symbols-outlined {
         background-color: rgb(219, 51, 51, 0.9);
         border-radius: 4vw;
-        padding: 0.5vw;
+        padding: 1vw;
+        margin-top: 1vw;
     }
 
     #why-text {
@@ -687,7 +712,6 @@ tr #bear-container-texts {
     }
 
     .inspiration-font-elements {
-
         font-size: 3.5vw;
     }
 
@@ -695,6 +719,19 @@ tr #bear-container-texts {
         font-size: 4vw;
     }
 
+    #bear-logo img {
+        width: 20%;
+        height: auto;
+    }
+
+    #circle {
+        position: absolute;
+        top: 20%;
+        left: 0%;
+        width: 100%;
+        z-index: -1;
+    }
+    
     #bear-container-text-1 {
         font-size: 4.5vw;
     }
@@ -704,13 +741,44 @@ tr #bear-container-texts {
     }
 
     #personalization-container {
+        height: 120vh;
+        width: 100vw;
+        
+    }
 
-        height: 80%;
+    #title-container-elements-personalization{
+        margin-top: 20%;
+    }
+
+    #bear-container-texts{
+        margin-bottom: 20%;
+    }
+
+    #contact-text-element-2 h2 {
+        font-size: 3vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .slide-photo {
+        height: 40vw;
+        width: 130vw;
+        position: relative;
+        left: -15%
     }
 }
 
+.carousel-control-next {
+    background-color: #18060D;
+}
 
+.carousel-control-prev {
+    background-color: #18060D;
+}
 
+.sr-only {
+    color: rgb(0, 0, 0);
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 850px) {
@@ -752,15 +820,18 @@ tr #bear-container-texts {
         font-family: Italiana;
     }
 
+    #up {
+        text-decoration: none;
+        color: white;
+    }
+
     #catchy-bottom-sign {
         font-size: 3vw;
     }
 
     #catchy-bottom-sign {
         background-color: rgba(14, 23, 36, 0.8);
-
         border-radius: 12vw;
-
     }
 
     #offer-container-elements {
@@ -785,11 +856,6 @@ tr #bear-container-texts {
         width: 70vw;
     }
 
-    #personalization-container {
-        height: 80vh;
-        padding-bottom: 10vw;
-        padding-top: 10vw;
-    }
 
     #title {
         font-size: 5vw;
@@ -808,8 +874,8 @@ tr #bear-container-texts {
         position: absolute;
         top: 60%;
         width: 100%;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
     }
 
     #write-to-us-slogan {
@@ -817,8 +883,8 @@ tr #bear-container-texts {
         transform: rotate(-7deg);
     }
 
-    #bear-element img {
-        width: 40%;
+    #bear-logo img {
+        max-width: 80vh;
     }
 
     #statue-element img {
@@ -831,10 +897,6 @@ tr #bear-container-texts {
 
     #idea-element img {
         width: 50%;
-    }
-
-    #bear-container-text-2 {
-        font-size: 6vw;
     }
 
     #call-container {
@@ -853,10 +915,30 @@ tr #bear-container-texts {
     }
 
 
-    #circle {
-        width: 80%;
+    #personalization-container-elements{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    #circle{
+        position: absolute;
         left: 10%;
-        top: 20%;
+        top: 15%;
+        width: 80vw;
+    }
+
+    #bear-container-texts hr{
+        width: 70.5vw;
+    }
+
+    #bear-container-text-1{
+        font-size: 7.5vw;
+    }
+
+    #bear-container-text-2{
+        font-size: 7.5vw;
     }
 
     .material-symbols-outlined {
@@ -865,11 +947,26 @@ tr #bear-container-texts {
         border-radius: 4vw;
         padding: 1.5vw;
     }
+
+
+    #contact-container {
+
+        background-image: url(/graphics/background-fifth-small.png);
+
+    }
+
+    .slide-photo {
+        height: 60vw;
+        width: 200vw;
+        position: relative;
+        left: -50%;
+        top: 20%;
+    }
 }
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
 
     #logo-and-slogan-container {
         width: 100%;
@@ -950,24 +1047,42 @@ tr #bear-container-texts {
         font-size: 14vw;
     }
 
+    #offer-container-elements {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 20%);
+    }
+
     .offer-container-element {
-        display: block;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .offer-container-element h2 {
         width: 100%;
+        order: 2;
+    }
+
+    .offer-images {
+        text-align: center;
+        width: 100%;
+        order: 1;
+        overflow: hidden;
+    }
+
+    #why-text {
+        order: 1;
+    }
+
+    .offer-container-element hr {
+        order: 2;
     }
 
     #bear-element {
         display: flex;
         justify-content: center;
         padding-left: 0;
-    }
-
-    .offer-images {
-        text-align: center;
-        width: 100%;
-    }
-
-    .offer-container-element h2 {
-        width: 100%;
     }
 
     #statue-element {
@@ -1065,21 +1180,9 @@ tr #bear-container-texts {
         font-size: 10vw;
     }
 
-    #personalization-container {
-        height: 90vh;
-        padding-bottom: 10vw;
-        padding-top: 10vw;
-    }
 
     #contact-text-element-2 h2 {
         font-size: 5vw;
-    }
-
-
-    #circle {
-        width: 100%;
-        left: 0;
-        top: 20%;
     }
 
     #bear-container-texts hr {
@@ -1087,5 +1190,35 @@ tr #bear-container-texts {
     }
 
 
+    #bear-logo img {
+        width: 40%;
+        height: auto;
+    }
+
+    #circle {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    #bear-container-text-1 {
+        font-size: 6.5vw;
+    }
+
+    #bear-container-text-2 {
+        font-size: 6vw;
+    }
+
+    #personalization-container {
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+    #bear-container-texts{
+        margin-bottom: 20%;
+    }
 
 }
