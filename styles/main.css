@@ -109,6 +109,7 @@ section {
 
 body {
     line-height: 1;
+    background-color: #0e1724;
 }
 
 ol,
@@ -149,6 +150,8 @@ table {
 * {
     overflow-x: hidden;
 }
+
+
 
 html {
     scroll-behavior: smooth;
@@ -537,7 +540,7 @@ tr #bear-container-texts {
 
 }
 
-#title-container-elements-personalization{
+#title-container-elements-personalization {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -731,7 +734,7 @@ tr #bear-container-texts {
         width: 100%;
         z-index: -1;
     }
-    
+
     #bear-container-text-1 {
         font-size: 4.5vw;
     }
@@ -743,14 +746,14 @@ tr #bear-container-texts {
     #personalization-container {
         height: 120vh;
         width: 100vw;
-        
+
     }
 
-    #title-container-elements-personalization{
+    #title-container-elements-personalization {
         margin-top: 20%;
     }
 
-    #bear-container-texts{
+    #bear-container-texts {
         margin-bottom: 20%;
     }
 
@@ -887,16 +890,22 @@ tr #bear-container-texts {
         max-width: 80vh;
     }
 
+
+    #bear-element img {
+        width: 30%;
+    }
+
+
     #statue-element img {
-        width: 40%;
+        width: 30%;
     }
 
     #dolar-element img {
-        width: 60%;
+        width: 50%;
     }
 
     #idea-element img {
-        width: 50%;
+        width: 40%;
     }
 
     #call-container {
@@ -915,29 +924,29 @@ tr #bear-container-texts {
     }
 
 
-    #personalization-container-elements{
+    #personalization-container-elements {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column;
     }
 
-    #circle{
+    #circle {
         position: absolute;
         left: 10%;
         top: 15%;
         width: 80vw;
     }
 
-    #bear-container-texts hr{
+    #bear-container-texts hr {
         width: 70.5vw;
     }
 
-    #bear-container-text-1{
+    #bear-container-text-1 {
         font-size: 7.5vw;
     }
 
-    #bear-container-text-2{
+    #bear-container-text-2 {
         font-size: 7.5vw;
     }
 
@@ -1051,7 +1060,7 @@ tr #bear-container-texts {
         height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(5, 20%);
+        grid-template-rows: repeat(6, 16.6%);
     }
 
     .offer-container-element {
@@ -1103,19 +1112,19 @@ tr #bear-container-texts {
 
 
     #bear-element img {
-        width: 20%;
+        width: 16%;
     }
 
     #statue-element img {
-        width: 12%;
+        width: 10%;
     }
 
     #dolar-element img {
-        width: 30%;
+        width: 28%;
     }
 
     #idea-element img {
-        width: 20%;
+        width: 17%;
     }
 
     #offer-container-element-0 {
@@ -1154,7 +1163,8 @@ tr #bear-container-texts {
 
 
     .inspiration-font-elements {
-        font-size: 7vw;
+        font-size: 6vw;
+        margin-bottom: 1vh;
     }
 
     #title {
@@ -1202,7 +1212,7 @@ tr #bear-container-texts {
         width: 100%;
         z-index: -1;
     }
-    
+
     #bear-container-text-1 {
         font-size: 6.5vw;
     }
@@ -1214,10 +1224,10 @@ tr #bear-container-texts {
     #personalization-container {
         height: 100vh;
         width: 100vw;
-        
+
     }
 
-    #bear-container-texts{
+    #bear-container-texts {
         margin-bottom: 20%;
     }
 
