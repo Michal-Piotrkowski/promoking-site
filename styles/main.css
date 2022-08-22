@@ -147,8 +147,8 @@ table {
 }
 
 @font-face {
-    font-family: "Butler";
-    src: url("/fonts/Butler-Light.woff") format("truetype");
+    font-family: "AmaticSC";
+    src: url("/fonts/AmaticSC-Regular.ttf") format("truetype");
 }
 
 
@@ -272,7 +272,7 @@ h2 {
 
 #catchy-bottom-sign-cointainer {
     color: white;
-    font-family: Butler;
+    font-family: AmaticSC;
 }
 
 #catchy-bottom-sign {
@@ -340,7 +340,7 @@ h2 {
 
 .butler-font-elements {
     color: rgb(255, 255, 255);
-    font-family: Butler;
+    font-family: AmaticSC;
     text-align: center;
     font-size: 2vw;
 }
@@ -348,7 +348,7 @@ h2 {
 
 .butler-font-offer-elements {
     color: rgb(255, 255, 255);
-    font-family: Butler;
+    font-family: AmaticSC;
     text-align: center;
     font-size: 2vw;
 }
