@@ -145,6 +145,11 @@ table {
     src: url("/fonts/Inspiration-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Butler";
+    src: url("/fonts/Butler-Light.woff") format("truetype");
+}
+
 
 * {
     overflow-x: hidden;
@@ -264,7 +269,7 @@ h2 {
 
 #catchy-bottom-sign-cointainer {
     color: white;
-    font-family: Italiana;
+    font-family: Butler;
 }
 
 #catchy-bottom-sign {
@@ -328,8 +333,25 @@ h2 {
 .italiana-font-elements {
     color: white;
     font-family: Italiana;
+    overflow: visible;
 }
 
+.butler-font-elements {
+    color: rgb(255, 255, 255);
+    font-family: Butler;
+    text-align: center;
+    font-size: 2vw;
+    overflow: visible;
+}
+
+
+.butler-font-offer-elements {
+    color: rgb(255, 255, 255);
+    font-family: Butler;
+    text-align: center;
+    font-size: 2vw;
+    overflow: visible;
+}
 
 #call-container-elements {
     width: 100%;
