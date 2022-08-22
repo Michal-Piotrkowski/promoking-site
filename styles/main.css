@@ -336,7 +336,6 @@ h2 {
 .italiana-font-elements {
     color: white;
     font-family: Italiana;
-    overflow: visible;
 }
 
 .butler-font-elements {
@@ -344,7 +343,6 @@ h2 {
     font-family: Butler;
     text-align: center;
     font-size: 2vw;
-    overflow: visible;
 }
 
 
@@ -353,7 +351,6 @@ h2 {
     font-family: Butler;
     text-align: center;
     font-size: 2vw;
-    overflow: visible;
 }
 
 #call-container-elements {
