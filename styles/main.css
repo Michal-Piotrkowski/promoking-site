@@ -281,6 +281,7 @@ h2 {
     border-radius: 12vw;
     padding: 2vw;
     background-color: rgba(14, 23, 36, 0.8);
+    overflow: hidden;
 }
 
 
@@ -392,6 +393,7 @@ h2 {
 
 #number {
     font-size: 5vw;
+    margin: 5vh;
 
 }
 
@@ -609,7 +611,7 @@ hr {
     z-index: 1;
 }
 
-#scroll-trigger-container{
+#scroll-trigger-container {
     overscroll-behavior: none;
     width: 200%;
     height: 100%;
@@ -839,6 +841,29 @@ tr #bear-container-texts {
 }
 
 
+
+
+#footer {
+    width: 100%;
+    height: 35vh;
+    background-image: url('/graphics/background-fifth.png');
+    background-size: cover;
+    position: relative;
+}
+
+#footer-information {
+
+    position: absolute;
+
+    margin-left: 8%;
+    margin-top: 12vh;
+}
+
+#address {
+    color: white;
+    line-height: 200%;
+}
+
 #map {
     display: flex;
     justify-content: center;
@@ -846,31 +871,15 @@ tr #bear-container-texts {
 }
 
 #midpoint-logo-footer img {
-    width: 10%;
-
-}
-
-#footer-information {
-    margin: 2vw;
-    position: absolute;
-    top: 20%;
-    margin-left: 5%;
-    margin-top: 7%;
-}
-
-#address {
-    color: white;
+    width: 15%;
 
 }
 
 
-
-
-.red {
-    background-color: red;
-}
 
 @media only screen and (max-width: 1500px) {
+
+
 
     #title-container {
         width: 100%;
@@ -902,6 +911,11 @@ tr #bear-container-texts {
     #under-logo-slogan {
         font-size: 3vw;
 
+    }
+
+    #contact-container {
+        height: 100vh;
+        width: 100vw;
     }
 
     #under-logo-slogan-cointainer {
@@ -1024,6 +1038,26 @@ tr #bear-container-texts {
 
 }
 
+
+#footer {
+    overflow: hidden;
+    width: 100%;
+    height: 35vw;
+    background-image: url('/graphics/background-fifth.png');
+    background-size: cover;
+    position: relative;
+}
+
+#footer-information {
+    margin: 5vw;
+}
+
+#map {
+
+    margin: 5vw;
+}
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 850px) {
 
@@ -1105,9 +1139,7 @@ tr #bear-container-texts {
         font-size: 5vw;
     }
 
-    #contact-container {
-        height: 50vh;
-    }
+
 
     #contact-text-element-2 h2 {
         font-size: 2vh;
@@ -1116,7 +1148,7 @@ tr #bear-container-texts {
     #contact-text-element-2 {
         background-color: rgba(255, 255, 255, 0.05);
         position: absolute;
-        top: 60%;
+        top: 50%;
         width: 100%;
         padding-top: 2vh;
         padding-bottom: 2vh;
@@ -1255,6 +1287,34 @@ tr #bear-container-texts {
     #call-to-us-slogan {
         font-size: 5vw;
     }
+
+    #footer {
+        overflow: hidden;
+        width: 100%;
+        height: 40vh;
+        background-image: url('/graphics/background-fifth.png');
+        background-size: cover;
+        position: relative;
+    }
+
+    #footer-section {
+        display: flex;
+    }
+
+    #footer-information {
+        position: relative;
+        margin: 5vw;
+
+    }
+
+    #midpoint-logo-footer img {
+        width: 30%;
+    }
+
+    #map {
+        width: 90vw;
+        margin: 5vw;
+    }
 }
 
 
@@ -1304,7 +1364,7 @@ tr #bear-container-texts {
         flex-direction: column;
     }
 
-
+    /* 
     #catchy-bottom-sign-cointainer {
         text-align: center;
         width: 70%;
@@ -1312,7 +1372,8 @@ tr #bear-container-texts {
         font-size: 30px;
         color: white;
         font-family: Italiana;
-    }
+
+    } */
 
     #catchy-bottom-sign-cointainer {
         text-align: center;
@@ -1321,6 +1382,7 @@ tr #bear-container-texts {
         font-size: 30px;
         color: white;
         font-family: Italiana;
+        overflow: hidden;
     }
 
     #promoking-logo {
@@ -1588,4 +1650,24 @@ tr #bear-container-texts {
         overflow: hidden;
 
     }
+
+    #footer {
+        overflow: hidden;
+        width: 100%;
+        height: 90vh;
+        background-image: url('/graphics/background-fifth.png');
+        background-size: cover;
+        position: relative;
+    }
+
+    #footer-section {
+        display: block;
+    }
+
+    #footer-information {
+        position: relative;
+
+    }
+
+
 }
