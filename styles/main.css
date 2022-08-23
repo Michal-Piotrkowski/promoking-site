@@ -607,10 +607,14 @@ hr {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    padding-top: 20%;
-    padding-bottom: 20%;
+}
 
-
+#scroll-trigger-container{
+    overscroll-behavior: none;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #bear-logo {
@@ -681,7 +685,7 @@ tr #bear-container-texts {
 
 #contact-container {
     width: 100%;
-    height: 35vw;
+    height: 50vw;
     background-image: url('/graphics/background-fifth.png');
     background-size: cover;
     position: relative;

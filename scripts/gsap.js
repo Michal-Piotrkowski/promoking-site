@@ -50,17 +50,17 @@ gsap.to("#about-text-element", {
 
 
 
-gsap.to("#bear-logo", {
-    scrollTrigger: {
-        trigger: "#personalization-container",
-        pin: true,   // pin the trigger element while active
-        start: "top top", // when the top of the trigger hits the top of the viewport
-        // end after scrolling 500px beyond the start
-        scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-        //markers: true,
-    },
-    rotation: "180"
-})
+// gsap.to("#bear-logo", {
+//     scrollTrigger: {
+//         trigger: "#personalization-container",
+//         pin: true,   // pin the trigger element while active
+//         start: "top top", // when the top of the trigger hits the top of the viewport
+//         // end after scrolling 500px beyond the start
+//         scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+//         //markers: true,
+//     },
+//     rotation: "180"
+// })
 
 
 
@@ -126,3 +126,20 @@ gsap.utils.toArray(".fromUp").forEach(function (elem) {
 
 
 
+gsap.registerPlugin(ScrollTrigger);
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#scroll-trigger-container",
+    pin: true,
+    scrub: 0.7,
+    snap: 1 / (sections.length - 1),
+    start: "top top",
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: "bottom",
+  }
+});
