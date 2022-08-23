@@ -747,7 +747,6 @@ tr #bear-container-texts {
 
 #slider-container {
     background-color: white;
-    height: 60vh;
 }
 
 #carouselExampleControls {
@@ -780,12 +779,11 @@ tr #bear-container-texts {
 
 
 #about-container-elements {
+    display: flex;
     height: 100vh;
     position: relative;
     overflow: hidden;
     align-items: center;
-
-
 }
 
 #about-image-element img {
@@ -807,7 +805,7 @@ tr #bear-container-texts {
     overflow: hidden;
     height: 40%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 30%;
 
@@ -816,7 +814,7 @@ tr #bear-container-texts {
     text-align: center;
     color: black;
     padding: 10vh;
-    border: 3px solid white;
+
 
 }
 
@@ -840,6 +838,30 @@ tr #bear-container-texts {
 
 }
 
+
+#map {
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+}
+
+#midpoint-logo-footer img {
+    width: 10%;
+
+}
+
+#footer-information {
+    margin: 2vw;
+    position: absolute;
+    top: 20%;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+#address {
+    color: white;
+
+}
 
 
 
@@ -1084,7 +1106,7 @@ tr #bear-container-texts {
     }
 
     #contact-container {
-        height: 35vh;
+        height: 50vh;
     }
 
     #contact-text-element-2 h2 {
