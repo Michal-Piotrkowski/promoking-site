@@ -480,6 +480,7 @@ hr {
     margin: 5vw;
     width: 100%;
     margin: 20vh;
+    overflow: visible;
 }
 
 #right-element {
@@ -1007,6 +1008,12 @@ tr #bear-container-texts {
         position: relative;
         left: -15%
     }
+
+    #about-text-element p {
+        color: black;
+        font-size: 2vw;
+        margin-top: 3vh;
+    }
 }
 
 .carousel-control-next {
@@ -1056,7 +1063,6 @@ tr #bear-container-texts {
 
     margin: 5vw;
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 850px) {
