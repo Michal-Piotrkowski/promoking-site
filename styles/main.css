@@ -138,17 +138,17 @@ table {
 
 @font-face {
     font-family: "Italiana";
-    src: url("/fonts/Italiana-Regular.ttf") format("truetype");
+    src: url("/fonts/Italiana-Regular.ttf") format("truetype"); /*Font designed by Santiago Orozco https://fonts.google.com/specimen/Italiana?query=italiana*/
 }
 
 @font-face {
     font-family: "Inspiration";
-    src: url("/fonts/Inspiration-Regular.ttf") format("truetype");
+    src: url("/fonts/Inspiration-Regular.ttf") format("truetype"); /*Font designed by Robert Leuschke https://fonts.google.com/specimen/Inspiration/about?query=inspiration*/
 }
 
 @font-face {
     font-family: "AmaticSC";
-    src: url("/fonts/AmaticSC-Regular.ttf") format("truetype");
+    src: url("/fonts/AmaticSC-Regular.ttf") format("truetype"); /*Font designed by Vernon Adams, Ben Nathan, Thomas Jockin, Cyreal https://fonts.google.com/specimen/Amatic+SC/about?query=Amatic*/
 }
 
 
@@ -244,7 +244,7 @@ h2 {
 
 #under-logo-slogan-cointainer {
     text-align: center;
-    width: 30%;
+    width: 32%;
     height: auto;
     font-size: 30px;
     color: white;
@@ -322,7 +322,6 @@ h2 {
 
 
 #call-container {
-
     width: 100%;
     height: 30vw;
     background-image: url('/graphics/background-second.png');
@@ -342,28 +341,18 @@ h2 {
     font-family: Italiana;
 }
 
-.butler-font-elements {
+.amatic-font-elements {
     color: rgb(255, 255, 255);
     font-family: AmaticSC;
     text-align: center;
     font-size: 2vw;
 }
 
-
-.butler-font-offer-elements {
-    color: rgb(255, 255, 255);
-    font-family: AmaticSC;
-    text-align: center;
-    font-size: 2vw;
-}
-
-.butler-font-offer-elements-black {
+.amatic-font-offer-elements-black {
     color: rgb(0, 0, 0);
-    font-family: Butler;
     text-align: center;
     font-size: 2vw;
 }
-
 
 #call-container-elements {
     width: 100%;
@@ -417,35 +406,14 @@ hr {
     padding: 0;
 }
 
-
-#why-text {
-    width: 30%;
-    overflow: visible;
-}
-
-.offer-images {
-    text-align: center;
-    width: 60vw;
-}
-
-.offer-images img {
-    width: 10%;
-
-}
-
 .images-images img {
     max-height: 90%;
     max-width: 100%;
     margin-bottom: 30px;
-
-
     overflow: hidden;
     background: #ffffff;
     box-shadow: 1px 1px 5px 1px #CCCCCC;
-
-
 }
-
 
 .images-images {
     display: flex;
@@ -465,29 +433,19 @@ hr {
 
 .desc {
     font-size: 2vh;
-
     overflow: hidden;
     margin-top: 2vh;
     text-align: center;
-
-
+    padding: 1px;
 }
 
 #offer-title {
-    font-family: Butler;
     text-align: center;
     font-size: 3vw;
     margin: 5vw;
     width: 100%;
     margin: 20vh;
     overflow: visible;
-}
-
-#right-element {
-    display: flex;
-    justify-content: right;
-    width: 40%;
-
 }
 
 #images-container-elements {
@@ -500,103 +458,12 @@ hr {
 
 }
 
-
 .images-container-element {
     width: 100%;
     display: flex;
-
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-
-
-#offer-container-elements {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 30vh);
-    justify-items: center;
-    overflow: hidden;
-
-}
-
-
-.offer-container-element {
-    width: 100%;
-    display: flex;
-    background-color: #240E16;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.offer-container-element h2 {
-    width: 40vw;
-}
-
-#offer-container-element-0 {
-    background-color: #18060D;
-}
-
-
-#offer-container-element-2 {
-
-    background-color: #18060D;
-
-}
-
-
-#offer-container-element-4 {
-
-    background-color: #18060D;
-
-
-}
-
-#dolar-element {
-    display: flex;
-    justify-content: left;
-    padding-left: 12%;
-}
-
-#dolar-element img {
-    width: 35%;
-}
-
-#bear-element {
-    display: flex;
-    justify-content: left;
-    padding-left: 15%;
-}
-
-#bear-element img {
-    width: 25%;
-}
-
-#idea-element {
-    display: flex;
-    justify-content: right;
-    padding-right: 15%;
-}
-
-#idea-element img {
-    width: 30%;
-}
-
-#statue-element {
-    display: flex;
-    justify-content: right;
-    padding-right: 17%;
-}
-
-#statue-element img {
-    width: 18%;
-}
-
-#bear-element {
-    text-align: center;
-    align-items: center;
 }
 
 #personalization-container {
@@ -610,6 +477,10 @@ hr {
     position: relative;
     overflow: hidden;
     z-index: 1;
+}
+
+#bear-container-text-1 {
+    padding: 8px;
 }
 
 #scroll-trigger-container {
@@ -685,7 +556,6 @@ tr #bear-container-texts {
     font-size: 3vw;
 }
 
-
 #contact-container {
     width: 100%;
     height: 50vw;
@@ -721,31 +591,13 @@ tr #bear-container-texts {
 #write-to-us-slogan {
     font-size: 7vw;
     transform: rotate(-7deg);
-
+    padding: 8px;
 }
 
 #contact-text-element-2 h2 {
     font-size: 2vw;
     padding: 0;
     margin: 0;
-
-}
-
-#or-element {
-    width: 100%;
-    position: static;
-    height: 0%;
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#or-text-element {
-    margin-top: 1.5vh;
-    overflow: visible;
-    z-index: 2;
 }
 
 #slider-container {
@@ -775,11 +627,7 @@ tr #bear-container-texts {
 
 #about-container {
     background-color: rgb(255, 255, 255);
-
-
 }
-
-
 
 #about-container-elements {
     display: flex;
@@ -790,12 +638,9 @@ tr #bear-container-texts {
 }
 
 #about-image-element img {
-
-
     width: 100vw;
     position: relative;
     overflow: hidden;
-
     z-index: 0;
 }
 
@@ -811,28 +656,22 @@ tr #bear-container-texts {
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 30%;
-
     z-index: 100;
     justify-content: center;
     text-align: center;
     color: black;
     padding: 10vh;
-
-
 }
 
 #about-text {
-
     overflow: hidden;
-
-
-
 }
 
 #about-text-element p {
     color: black;
     font-size: 1.25vw;
     margin-top: 3vh;
+    padding: 1px;
 }
 
 #about-text-element h2 {
@@ -840,9 +679,6 @@ tr #bear-container-texts {
     font-size: 4vw;
 
 }
-
-
-
 
 #footer {
     width: 100%;
@@ -853,9 +689,7 @@ tr #bear-container-texts {
 }
 
 #footer-information {
-
     position: absolute;
-
     margin-left: 8%;
     margin-top: 12vh;
 }
@@ -873,10 +707,7 @@ tr #bear-container-texts {
 
 #midpoint-logo-footer img {
     width: 15%;
-
 }
-
-
 
 @media only screen and (max-width: 1500px) {
 
@@ -885,7 +716,6 @@ tr #bear-container-texts {
     #title-container {
         width: 100%;
         height: 100vh;
-
         background-size: cover;
         overflow: hidden;
 
@@ -911,7 +741,6 @@ tr #bear-container-texts {
 
     #under-logo-slogan {
         font-size: 3vw;
-
     }
 
     #contact-container {
@@ -928,12 +757,10 @@ tr #bear-container-texts {
         font-family: Italiana;
     }
 
-
     #catchy-bottom-sign {
         background-color: rgba(14, 23, 36, 0.8);
         font-size: 2.5vw;
         border-radius: 12vw;
-
     }
 
     .material-symbols-outlined {
@@ -941,10 +768,6 @@ tr #bear-container-texts {
         border-radius: 4vw;
         padding: 1vw;
         margin-top: 1vw;
-    }
-
-    #why-text {
-        font-size: 4.5vw;
     }
 
     .inspiration-font-elements {
@@ -971,6 +794,8 @@ tr #bear-container-texts {
 
     #bear-container-text-1 {
         font-size: 4.5vw;
+        padding: 5px;
+        overflow: hidden;
     }
 
     #bear-container-text-2 {
@@ -1038,13 +863,10 @@ tr #bear-container-texts {
 
 .desc {
     font-size: 2vh;
-
     overflow: hidden;
     margin-top: 2vh;
     text-align: center;
-
 }
-
 
 #footer {
     overflow: hidden;
@@ -1060,7 +882,6 @@ tr #bear-container-texts {
 }
 
 #map {
-
     margin: 5vw;
 }
 
@@ -1070,10 +891,8 @@ tr #bear-container-texts {
     #title-container {
         width: 100%;
         height: 100vh;
-
         background-size: cover;
         overflow: hidden;
-
     }
 
     #midpoint-logo {
@@ -1118,16 +937,6 @@ tr #bear-container-texts {
         border-radius: 12vw;
     }
 
-    #offer-container-elements {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(4, 20vh);
-        justify-items: center;
-        overflow: hidden;
-
-    }
-
     #offer-container {
         height: 100%;
     }
@@ -1140,12 +949,9 @@ tr #bear-container-texts {
         width: 70vw;
     }
 
-
     #title {
         font-size: 5vw;
     }
-
-
 
     #contact-text-element-2 h2 {
         font-size: 2vh;
@@ -1168,25 +974,7 @@ tr #bear-container-texts {
     #bear-logo img {
         max-width: 80vh;
     }
-
-
-    #bear-element img {
-        width: 30%;
-    }
-
-
-    #statue-element img {
-        width: 30%;
-    }
-
-    #dolar-element img {
-        width: 50%;
-    }
-
-    #idea-element img {
-        width: 40%;
-    }
-
+    
     #call-container {
         height: 40vw;
         overflow: hidden;
@@ -1194,7 +982,6 @@ tr #bear-container-texts {
     }
 
     #call-container-elements {
-
         height: 130%;
         overflow: hidden;
     }
@@ -1202,9 +989,6 @@ tr #bear-container-texts {
     #title-container-bottom {
         top: 70vh;
     }
-
-
-
 
     #personalization-container-elements {
         display: flex;
@@ -1234,7 +1018,6 @@ tr #bear-container-texts {
     }
 
     .material-symbols-outlined {
-
         background-color: rgb(219, 51, 51, 0.9);
         border-radius: 4vw;
         padding: 1.5vw;
@@ -1242,9 +1025,7 @@ tr #bear-container-texts {
 
 
     #contact-container {
-
         background-image: url(/graphics/background-fifth-small.png);
-
     }
 
     .slide-photo {
@@ -1260,35 +1041,27 @@ tr #bear-container-texts {
     }
 
     #offer-title {
-        font-family: Butler;
         text-align: center;
         font-size: 5vw;
         margin: 5vw;
         width: 100%;
-        /* margin: 20vh; */
     }
 
     #about-text-element p {
-
         font-size: 3vw;
-
     }
 
     #about-text-element h2 {
-
         font-size: 10vw;
     }
 
     #about-image-element img {
-
         display: none;
-
     }
 
     #number {
         font-size: 7vw;
     }
-
 
     #call-to-us-slogan {
         font-size: 5vw;
@@ -1310,7 +1083,6 @@ tr #bear-container-texts {
     #footer-information {
         position: relative;
         margin: 5vw;
-
     }
 
     #midpoint-logo-footer img {
@@ -1370,17 +1142,6 @@ tr #bear-container-texts {
         flex-direction: column;
     }
 
-    /* 
-    #catchy-bottom-sign-cointainer {
-        text-align: center;
-        width: 70%;
-        height: auto;
-        font-size: 30px;
-        color: white;
-        font-family: Italiana;
-
-    } */
-
     #catchy-bottom-sign-cointainer {
         text-align: center;
         width: 50%;
@@ -1397,7 +1158,6 @@ tr #bear-container-texts {
 
     #call-container {
         height: 80vw;
-
     }
 
     #call-to-us-slogan {
@@ -1406,13 +1166,6 @@ tr #bear-container-texts {
 
     #number {
         font-size: 14vw;
-    }
-
-    #offer-container-elements {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(5, 20%);
     }
 
     .offer-container-element {
@@ -1425,94 +1178,9 @@ tr #bear-container-texts {
         order: 2;
     }
 
-    .offer-images {
-        text-align: center;
-        width: 100%;
-        order: 1;
-        overflow: hidden;
-    }
-
-    #why-text {
-        order: 1;
-    }
-
     .offer-container-element hr {
         order: 2;
     }
-
-    #bear-element {
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-    }
-
-    #statue-element {
-        display: block;
-        padding-right: 0;
-    }
-
-    #dolar-element {
-        display: block;
-        padding-left: 0;
-    }
-
-    #idea-element {
-        display: flex;
-        justify-content: center;
-        padding-right: 0;
-    }
-
-
-    #bear-element img {
-        width: 16%;
-    }
-
-    #statue-element img {
-        width: 10%;
-    }
-
-    #dolar-element img {
-        width: 28%;
-    }
-
-    #idea-element img {
-        width: 17%;
-    }
-
-    #offer-container-element-0 {
-        align-items: center;
-        display: flex;
-    }
-
-    #offer-container-element-1 {
-        padding-top: 5vw;
-    }
-
-    #offer-container-element-2 {
-        padding-top: 3vw;
-    }
-
-    #offer-container-element-3 {
-        padding-top: 3vw;
-    }
-
-    #offer-container-element-4 {
-        padding-top: 3vw;
-    }
-
-    #why-text {
-        width: 100%;
-        overflow: visible;
-    }
-
-    #offer-container-element-0 hr {
-        width: 50%;
-    }
-
-    #why-text {
-        font-size: 10vw;
-    }
-
 
     .inspiration-font-elements {
         font-size: 6vw;
@@ -1591,7 +1259,6 @@ tr #bear-container-texts {
 
     }
 
-
     .images-container-element {
         width: 100%;
         display: block;
@@ -1613,39 +1280,29 @@ tr #bear-container-texts {
     }
 
     #about-text-element p {
-
         font-size: 4vw;
-
     }
 
     #about-text-element h2 {
-
         font-size: 15vw;
     }
 
     #about-image-element img {
-
         display: none;
-
     }
 
     #offer-title {
         justify-content: center;
-        font-family: Butler;
         text-align: center;
         font-size: 8vw;
         margin: 10vw;
         display: flex;
-
         width: 100%;
-        /* margin: 20vh; */
     }
 
     #images-container-element-0 {
         display: flex;
     }
-
-
 
     #images-container-elements {
         width: 100%;
@@ -1654,7 +1311,6 @@ tr #bear-container-texts {
         grid-template-rows: repeat(3, 60vh);
         justify-items: center;
         overflow: hidden;
-
     }
 
     #footer {
@@ -1672,8 +1328,5 @@ tr #bear-container-texts {
 
     #footer-information {
         position: relative;
-
     }
-
-
 }
