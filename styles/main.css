@@ -278,7 +278,6 @@ h2 {
 
 #catchy-bottom-sign {
     font-size: 1.5vw;
-    border-radius: 12vw;
     padding: 2vw;
     background-color: rgba(14, 23, 36, 0.8);
     overflow: hidden;
@@ -352,6 +351,7 @@ h2 {
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: 2vw;
+    padding: 1%;
 }
 
 #call-container-elements {
@@ -578,6 +578,7 @@ tr #bear-container-texts {
     -ms-transform: translateY(-10%);
     transform: translateY(-10%);
     overflow: hidden;
+    padding: 2%;
 }
 
 #contact-text-element-2 {
@@ -760,7 +761,7 @@ tr #bear-container-texts {
     #catchy-bottom-sign {
         background-color: rgba(14, 23, 36, 0.8);
         font-size: 2.5vw;
-        border-radius: 12vw;
+        overflow: hidden;
     }
 
     .material-symbols-outlined {
@@ -794,7 +795,7 @@ tr #bear-container-texts {
 
     #bear-container-text-1 {
         font-size: 4.5vw;
-        padding: 5px;
+        padding: 2%;
         overflow: hidden;
     }
 
@@ -934,7 +935,6 @@ tr #bear-container-texts {
 
     #catchy-bottom-sign {
         background-color: rgba(14, 23, 36, 0.8);
-        border-radius: 12vw;
     }
 
     #offer-container {
