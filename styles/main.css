@@ -136,6 +136,9 @@ table {
 }
 
 
+/* FONTS */
+
+
 @font-face {
     font-family: "Italiana";
     src: url("/fonts/Italiana-Regular.ttf") format("truetype");
@@ -154,6 +157,8 @@ table {
     /*Font designed by Vernon Adams, Ben Nathan, Thomas Jockin, Cyreal https://fonts.google.com/specimen/Amatic+SC/about?query=Amatic*/
 }
 
+/* SITE SETTINGS*/
+
 * {
     overflow-x: hidden;
 }
@@ -165,7 +170,6 @@ html {
 /* Hide scrollbar for Chrome, Safari and Opera */
 #all-container::-webkit-scrollbar {
     display: none;
-
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -175,6 +179,9 @@ html {
     scrollbar-width: none;
     /* Firefox */
 }
+
+
+/* WHOLE SITE */
 
 h2 {
     margin: 0;
@@ -187,6 +194,8 @@ h2 {
     height: 100%;
     overflow-y: scroll;
 }
+
+/* TITLE CONTAINER */
 
 #title-container {
     width: 100%;
@@ -201,6 +210,11 @@ h2 {
     height: 100%;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3vh;
 }
 
 #title-container-logos {
@@ -209,17 +223,23 @@ h2 {
     position: relative;
 }
 
+#title-container-bottom {
+    position: absolute;
+    width: 40%;
+    top: 80%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #midpoint-logo {
     position: absolute;
     left: 2%;
     top: 3%;
     width: 5%;
     height: auto;
-}
-
-#midpoint-logo img {
-    width: 100%;
-    height: 100%;
 }
 
 #logo-and-slogan-container {
@@ -231,6 +251,23 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#catchy-bottom-sign-cointainer {
+    color: white;
+    font-family: AmaticSC;
+}
+
+#bottom-arrows-cointainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#midpoint-logo img {
+    width: 100%;
+    height: 100%;
 }
 
 #promoking-logo {
@@ -260,35 +297,11 @@ h2 {
     font-size: 2vw;
 }
 
-#title-container-bottom {
-    position: absolute;
-    width: 40%;
-    top: 80%;
-    left: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#catchy-bottom-sign-cointainer {
-    color: white;
-    font-family: AmaticSC;
-}
-
 #catchy-bottom-sign {
     font-size: 1.5vw;
     padding: 2vw;
     background-color: rgba(14, 23, 36, 0.8);
     overflow: hidden;
-}
-
-
-#bottom-arrows-cointainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 #bottom-arrows-cointainer span {
@@ -570,13 +583,6 @@ tr #personalization-container-texts {
     width: 100%;
 }
 
-#title-container-elements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 #title-container-elements-personalization {
     width: 100%;
     position: absolute;
@@ -596,18 +602,12 @@ tr #personalization-container-texts {
     overflow: hidden;
 }
 
-#title-container-elements {
-    text-align: center;
-    margin-bottom: 3vh;
-}
-
 #title {
     font-size: 3vw;
 }
 
 #contact-container {
     width: 100%;
-    height: 50vw;
     background-image: url('/graphics/background-fifth.png');
     background-size: cover;
     position: relative;
