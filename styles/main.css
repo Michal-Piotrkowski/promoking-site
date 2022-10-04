@@ -138,25 +138,25 @@ table {
 
 @font-face {
     font-family: "Italiana";
-    src: url("/fonts/Italiana-Regular.ttf") format("truetype"); /*Font designed by Santiago Orozco https://fonts.google.com/specimen/Italiana?query=italiana*/
+    src: url("/fonts/Italiana-Regular.ttf") format("truetype");
+    /*Font designed by Santiago Orozco https://fonts.google.com/specimen/Italiana?query=italiana*/
 }
 
 @font-face {
     font-family: "Inspiration";
-    src: url("/fonts/Inspiration-Regular.ttf") format("truetype"); /*Font designed by Robert Leuschke https://fonts.google.com/specimen/Inspiration/about?query=inspiration*/
+    src: url("/fonts/Inspiration-Regular.ttf") format("truetype");
+    /*Font designed by Robert Leuschke https://fonts.google.com/specimen/Inspiration/about?query=inspiration*/
 }
 
 @font-face {
     font-family: "AmaticSC";
-    src: url("/fonts/AmaticSC-Regular.ttf") format("truetype"); /*Font designed by Vernon Adams, Ben Nathan, Thomas Jockin, Cyreal https://fonts.google.com/specimen/Amatic+SC/about?query=Amatic*/
+    src: url("/fonts/AmaticSC-Regular.ttf") format("truetype");
+    /*Font designed by Vernon Adams, Ben Nathan, Thomas Jockin, Cyreal https://fonts.google.com/specimen/Amatic+SC/about?query=Amatic*/
 }
-
 
 * {
     overflow-x: hidden;
 }
-
-
 
 html {
     scroll-behavior: smooth;
@@ -319,7 +319,6 @@ h2 {
     width: 100%;
 }
 
-
 #call-container {
     width: 100%;
     height: 30vw;
@@ -348,6 +347,8 @@ h2 {
 }
 
 .amatic-font-offer-elements-black {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: 2vw;
@@ -387,7 +388,7 @@ h2 {
 }
 
 #images-container {
-    background-color: white;
+    background-image: url('/graphics/background-first-offer.jpg');
 }
 
 
@@ -400,7 +401,6 @@ h2 {
 hr {
     border-top: 1px solid rgb(255, 255, 255) !important;
     width: 50%;
-    height: 10px;
     color: white;
     margin: 0;
     padding: 0;
@@ -437,6 +437,22 @@ hr {
     margin-top: 2vh;
     text-align: center;
     padding: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#specs {
+    background-color: rgba(255, 255, 255, 0.456);
+    padding: 1%;
+    width: 100vmin;
+}
+
+ul {
+    text-align: left;
+}
+
+ul li {
+    height: 4vh;
 }
 
 #offer-title {
@@ -452,10 +468,9 @@ hr {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 50vh);
+    grid-template-rows: 70vh 50vh 50vh 50vh;
     justify-items: center;
     overflow: hidden;
-
 }
 
 .images-container-element {
@@ -468,10 +483,8 @@ hr {
 
 #personalization-container {
     width: 100%;
-    height: 50vw;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-image: url('/graphics/background-fourth.png');
     background-size: cover;
     position: relative;
@@ -491,32 +504,60 @@ hr {
     flex-wrap: nowrap;
 }
 
-#bear-logo {
-    text-align: center;
+#photos-personalization {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 50%);
 }
 
-#bear-logo img {
-    height: 50vh;
+.personalization-photos-container {
+    display: flex;
 }
 
-tr #bear-container-texts {
+.personalization-photos-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: AmaticSC;
+    font-size: 1.5vw;
+}
+
+.personalization-photo {
+    width: 30vmin;
+    height: 30vmin;
+    margin: 10%;
+}
+
+#personalization-container-texts {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+}
+
+
+tr #personalization-container-texts {
     z-index: 1;
 }
 
-#bear-container-texts hr {
-    margin-top: 2vw;
+#personalization-container-texts hr {
     width: 40vw;
 }
 
-#bear-container-line {
+#personalization-container-line {
     z-index: 1;
 }
 
 #circle {
     position: absolute;
-    top: 15%;
-    left: 32.5%;
-    width: 35%;
+    top: 10%;
+    left: 30%;
+    width: 80vmin;
     z-index: -1;
 }
 
@@ -532,6 +573,9 @@ tr #bear-container-texts {
 }
 
 #title-container-elements-personalization {
+    width: 100%;
+    position: absolute;
+    top: 10vmin;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,8 +584,8 @@ tr #bear-container-texts {
 }
 
 #baloon-container-elements {
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
@@ -601,8 +645,18 @@ tr #bear-container-texts {
     margin: 0;
 }
 
+#contact-container-video {
+    position: absolute;
+    left: -5%;
+    top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #slider-container {
     background-color: white;
+    height: 100%;
 }
 
 #carouselExampleControls {
@@ -622,8 +676,9 @@ tr #bear-container-texts {
 }
 
 .slide-photo {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 99%;
 }
 
 #about-container {
@@ -661,10 +716,12 @@ tr #bear-container-texts {
     justify-content: center;
     text-align: center;
     color: black;
-    padding: 10vh;
+    padding: 5vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
-#about-text {
+.about-text {
     overflow: hidden;
 }
 
@@ -779,16 +836,11 @@ tr #bear-container-texts {
         font-size: 4vw;
     }
 
-    #bear-logo img {
-        width: 20%;
-        height: auto;
-    }
-
     #circle {
         position: absolute;
         top: 20%;
-        left: 0%;
-        width: 100%;
+        left: 25%;
+        width: 50%;
         z-index: -1;
         overflow: hidden;
     }
@@ -818,7 +870,7 @@ tr #bear-container-texts {
         margin-top: 20%;
     }
 
-    #bear-container-texts {
+    #personalization-container-texts {
         margin-bottom: 20%;
     }
 
@@ -971,10 +1023,6 @@ tr #bear-container-texts {
         transform: rotate(-7deg);
     }
 
-    #bear-logo img {
-        max-width: 80vh;
-    }
-    
     #call-container {
         height: 40vw;
         overflow: hidden;
@@ -1005,7 +1053,7 @@ tr #bear-container-texts {
         width: 80vw;
     }
 
-    #bear-container-texts hr {
+    #personalization-container-texts hr {
         width: 70.5vw;
     }
 
@@ -1191,7 +1239,7 @@ tr #bear-container-texts {
         font-size: 9vw;
     }
 
-    #bear-container-texts {
+    #personalization-container-texts {
         align-items: center;
         text-align: center;
     }
@@ -1215,14 +1263,8 @@ tr #bear-container-texts {
         font-size: 5vw;
     }
 
-    #bear-container-texts hr {
+    #personalization-container-texts hr {
         width: 100%;
-    }
-
-
-    #bear-logo img {
-        width: 40%;
-        height: auto;
     }
 
     #circle {
@@ -1247,7 +1289,7 @@ tr #bear-container-texts {
 
     }
 
-    #bear-container-texts {
+    #personalization-container-texts {
         margin-bottom: 20%;
     }
 
