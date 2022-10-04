@@ -441,6 +441,11 @@ hr {
     font-weight: 600;
 }
 
+p.desc {
+    background-color: rgba(255, 255, 255, 0.456);
+    padding: 1%;
+}
+
 #specs {
     background-color: rgba(255, 255, 255, 0.456);
     padding: 1%;
@@ -753,8 +758,10 @@ tr #personalization-container-texts {
 }
 
 #address {
+    font-family: 'Poppins', sans-serif;
     color: white;
     line-height: 200%;
+    font-size: 3vmin;
 }
 
 #map {
@@ -764,7 +771,8 @@ tr #personalization-container-texts {
 }
 
 #midpoint-logo-footer img {
-    width: 15%;
+    margin-bottom: 5vh;
+    width: 25%;
 }
 
 @media only screen and (max-width: 1500px) {
