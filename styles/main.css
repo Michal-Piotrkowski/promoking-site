@@ -157,6 +157,26 @@ table {
     /*Font designed by Vernon Adams, Ben Nathan, Thomas Jockin, Cyreal https://fonts.google.com/specimen/Amatic+SC/about?query=Amatic*/
 }
 
+/*FONTS CSS*/
+.inspiration-font-elements {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Inspiration;
+    font-size: 3vw;
+}
+
+.italiana-font-elements {
+    color: white;
+    font-family: Italiana;
+}
+
+.amatic-font-elements {
+    color: rgb(255, 255, 255);
+    font-family: AmaticSC;
+    text-align: center;
+    font-size: 2vw;
+}
+
 /* SITE SETTINGS*/
 
 * {
@@ -180,7 +200,6 @@ html {
     /* Firefox */
 }
 
-
 /* WHOLE SITE */
 
 h2 {
@@ -193,6 +212,14 @@ h2 {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+}
+
+hr {
+    border-top: 1px solid rgb(255, 255, 255) !important;
+    width: 50%;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 /* TITLE CONTAINER */
@@ -217,21 +244,25 @@ h2 {
     margin-bottom: 3vh;
 }
 
+/*ANIMATIONS AND BACKGROUND GRAPHICS*/
+
+#baloon-element {
+    width: 10vw;
+    position: absolute;
+    top: 50vh;
+    left: 70vw;
+}
+
+#baloon-element img {
+    width: 100%;
+}
+
+/*ALL LOGOS AND GRAPHICS CONTAINER IN TITLE CONTAINER*/
+
 #title-container-logos {
     width: 100%;
     height: 100%;
     position: relative;
-}
-
-#title-container-bottom {
-    position: absolute;
-    width: 40%;
-    top: 80%;
-    left: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 #midpoint-logo {
@@ -240,6 +271,11 @@ h2 {
     top: 3%;
     width: 5%;
     height: auto;
+}
+
+#midpoint-logo img {
+    width: 100%;
+    height: 100%;
 }
 
 #logo-and-slogan-container {
@@ -251,23 +287,6 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-#catchy-bottom-sign-cointainer {
-    color: white;
-    font-family: AmaticSC;
-}
-
-#bottom-arrows-cointainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#midpoint-logo img {
-    width: 100%;
-    height: 100%;
 }
 
 #promoking-logo {
@@ -288,13 +307,26 @@ h2 {
     font-family: Italiana;
 }
 
-#up {
-    text-decoration: none;
-    color: white;
-}
-
 #under-logo-slogan {
     font-size: 2vw;
+}
+
+/*ALL BOTTOM SIGNS AND GRAPHICS*/
+
+#title-container-bottom {
+    position: absolute;
+    width: 40%;
+    top: 80%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#catchy-bottom-sign-cointainer {
+    color: white;
+    font-family: AmaticSC;
 }
 
 #catchy-bottom-sign {
@@ -304,8 +336,20 @@ h2 {
     overflow: hidden;
 }
 
+#bottom-arrows-cointainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #bottom-arrows-cointainer span {
     overflow: hidden;
+}
+
+#up {
+    text-decoration: none;
+    color: white;
 }
 
 .material-symbols-outlined {
@@ -313,6 +357,8 @@ h2 {
     font-size: 20px;
 }
 
+
+/*HOVERS FOR TITLE CONTAINER*/
 #title-container-bottom:hover .material-symbols-outlined {
     color: rgb(109, 108, 108);
 }
@@ -321,116 +367,56 @@ h2 {
     color: rgb(109, 108, 108);
 }
 
-#baloon-element {
-    width: 10vw;
-    position: absolute;
-    top: 50vh;
-    left: 70vw;
-}
-
-#baloon-element img {
-    width: 100%;
-}
-
-#call-container {
-    width: 100%;
-    height: 30vw;
-    background-image: url('/graphics/background-second.png');
-    background-size: cover;
-    overflow: hidden;
-}
-
-.inspiration-font-elements {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: Inspiration;
-    font-size: 3vw;
-}
-
-.italiana-font-elements {
-    color: white;
-    font-family: Italiana;
-}
-
-.amatic-font-elements {
-    color: rgb(255, 255, 255);
-    font-family: AmaticSC;
-    text-align: center;
-    font-size: 2vw;
-}
-
-.amatic-font-offer-elements-black {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 2vw;
-    padding: 1%;
-}
-
-#call-container-elements {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-#call-text-element {
-    position: relative;
-    top: 30%;
-    -webkit-transform: translateY(-30%);
-    -ms-transform: translateY(-30%);
-    transform: translateY(-30%);
-}
-
-#call-number-element {
-    position: relative;
-    top: 35%;
-    -webkit-transform: translateY(-40%);
-    -ms-transform: translateY(-40%);
-    transform: translateY(-40%);
-}
-
-#call-to-us-slogan {
-    font-size: 4vw;
-}
-
-#number {
-    font-size: 5vw;
-    margin: 5vh;
-
-}
+/* IMAGES-CONTAINER */
 
 #images-container {
     background-image: url('/graphics/background-first-offer.jpg');
 }
 
-
-#offer-container {
+#images-container-elements {
     width: 100%;
-    height: 149.99%;
-
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70vh 50vh 50vh 50vh;
+    justify-items: center;
+    overflow: hidden;
 }
 
-hr {
-    border-top: 1px solid rgb(255, 255, 255) !important;
-    width: 50%;
-    color: white;
-    margin: 0;
-    padding: 0;
+.images-container-element {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#offer-title {
+    text-align: center;
+    font-size: 3vw;
+    margin: 5vw;
+    width: 100%;
+    margin: 20vh;
+    overflow: visible;
+}
+
+.images-images {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .images-images img {
-    max-height: 90%;
-    max-width: 100%;
+    max-height: 100%;
+    max-width: 45%;
     margin-bottom: 30px;
     overflow: hidden;
     background: #ffffff;
     box-shadow: 1px 1px 5px 1px #CCCCCC;
 }
 
-.images-images {
-    display: flex;
-    overflow: hidden;
+#images-container-image2{
+    max-height: 90%;
+    max-width: 80%;
 }
 
 .texts-under-images {
@@ -442,6 +428,15 @@ hr {
 
 .texts-under-images h2 {
     font-size: 3vh;
+}
+
+.amatic-font-offer-elements-black {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2vw;
+    padding: 1%;
 }
 
 .desc {
@@ -473,31 +468,115 @@ ul li {
     height: 4vh;
 }
 
-#offer-title {
+/*CALL CONTAINER*/
+
+#call-container {
+    width: 100%;
+    height: 30vw;
+    background-image: url('/graphics/background-second.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+#call-container-elements {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    font-size: 3vw;
-    margin: 5vw;
-    width: 100%;
-    margin: 20vh;
-    overflow: visible;
 }
 
-#images-container-elements {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 70vh 50vh 50vh 50vh;
-    justify-items: center;
-    overflow: hidden;
+#call-text-element {
+    position: relative;
+    top: 30%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
 }
 
-.images-container-element {
-    width: 100%;
+#call-number-element {
+    position: relative;
+    top: 35%;
+    -webkit-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+
+#call-to-us-slogan {
+    font-size: 4vw;
+}
+
+#number {
+    font-size: 5vw;
+    margin: 5vh;
+}
+
+/* ABOUT_CONTAINER*/
+
+#about-container {
+    background-image: url('/graphics/background-first-offer.jpg');
+}
+
+#about-container-elements {
     display: flex;
-    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
     align-items: center;
+}
+
+#about-image-element {
+    opacity: 1;
+}
+
+#about-image-element img {
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#about-text-element {
+    overflow: hidden;
+    height: 40%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 30%;
+    z-index: 100;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 5vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#about-text-element p {
+    color: black;
+    font-size: 1.25vw;
+    margin-top: 3vh;
+    padding: 1px;
+}
+
+#about-text-element h2 {
+    color: black;
+    font-size: 4vw;
+}
+
+.about-text {
     overflow: hidden;
 }
+
+/* TRIGGER FOR 2 CONTAINERS */
+
+#scroll-trigger-container {
+    overscroll-behavior: none;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* PERSONALIZATION CONTAINER */
 
 #personalization-container {
     width: 100%;
@@ -510,16 +589,50 @@ ul li {
     z-index: 1;
 }
 
-#bear-container-text-1 {
-    padding: 8px;
+#first-personalization-photos-container{
+    background-color: rgba(10, 12, 13, 0.8);
+    height: 40vh;
 }
 
-#scroll-trigger-container {
-    overscroll-behavior: none;
-    width: 200%;
-    height: 100%;
+#second-personalization-photos-container{
+    background-color: rgba(10, 12 ,13 , 0.8);
+    height: 40vh;
+}
+
+#circle {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 80vmin;
+    z-index: -1;
+}
+
+#circle img {
+    display: none;
+    width: 100%;
+}
+
+#title-container-elements-personalization {
+    width: 100%;
+    position: absolute;
+    top: 10vmin;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+#title {
+    font-size: 3vw;
+}
+
+#baloon-container-elements {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 #photos-personalization {
@@ -552,59 +665,29 @@ ul li {
     margin: 10%;
 }
 
-#personalization-container-texts {
-    position: absolute;
-    top: 75%;
-    left: 30%;
-}
-
-
-tr #personalization-container-texts {
-    z-index: 1;
-}
-
-#personalization-container-texts hr {
-    width: 40vw;
+.personalization-photos-elements h2{
+    padding-bottom: 4vh;
 }
 
 #personalization-container-line {
     z-index: 1;
 }
 
-#circle {
+#personalization-container-texts {
     position: absolute;
-    top: 10%;
+    top: 75%;
     left: 30%;
-    width: 80vmin;
-    z-index: -1;
 }
 
-#circle img {
-    width: 100%;
+#personalization-container-texts hr {
+    width: 40vw;
 }
 
-#title-container-elements-personalization {
-    width: 100%;
-    position: absolute;
-    top: 10vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 3vh;
+#baloon-container-text-1 {
+    padding: 8px;
 }
 
-#baloon-container-elements {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-#title {
-    font-size: 3vw;
-}
+/*CONTACT CONTAINER*/
 
 #contact-container {
     width: 100%;
@@ -615,14 +698,19 @@ tr #personalization-container-texts {
 
 #contact-container-elements {
     width: 100%;
-    height: 80%;
+    height: 100%;
     text-align: center;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact-text-element-1 {
-    position: relative;
-    top: 20%;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 5%;
     -webkit-transform: translateY(-10%);
     -ms-transform: translateY(-10%);
     transform: translateY(-10%);
@@ -630,18 +718,21 @@ tr #personalization-container-texts {
     padding: 2%;
 }
 
-#contact-text-element-2 {
-    position: relative;
-    top: 35%;
-    -webkit-transform: translateY(-20%);
-    -ms-transform: translateY(-20%);
-    transform: translateY(-20%);
-}
-
 #write-to-us-slogan {
     font-size: 7vw;
     transform: rotate(-7deg);
     padding: 8px;
+}
+
+#contact-text-element-2 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 65%;
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    background-color: rgba(148, 137, 137, 0.8);
 }
 
 #contact-text-element-2 h2 {
@@ -651,13 +742,19 @@ tr #personalization-container-texts {
 }
 
 #contact-container-video {
-    position: absolute;
-    left: -5%;
-    top: 7%;
+    width: 70vmin;
+    height: 70vmin;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
+video{
+    z-index: -1;
+    width: 100%;
+    height: 100%
+}
+
+/* SLIDER CONTAINER */
 
 #slider-container {
     background-color: white;
@@ -686,62 +783,7 @@ tr #personalization-container-texts {
     width: 100%;
 }
 
-#about-container {
-    background-color: rgb(255, 255, 255);
-}
-
-#about-container-elements {
-    display: flex;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    align-items: center;
-}
-
-#about-image-element img {
-    width: 100vw;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
-
-#about-image-element {
-    opacity: 1;
-}
-
-
-#about-text-element {
-    overflow: hidden;
-    height: 40%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
-    top: 30%;
-    z-index: 100;
-    justify-content: center;
-    text-align: center;
-    color: black;
-    padding: 5vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-.about-text {
-    overflow: hidden;
-}
-
-#about-text-element p {
-    color: black;
-    font-size: 1.25vw;
-    margin-top: 3vh;
-    padding: 1px;
-}
-
-#about-text-element h2 {
-    color: black;
-    font-size: 4vw;
-
-}
+/* FOOTER */
 
 #footer {
     width: 100%;
@@ -776,15 +818,16 @@ tr #personalization-container-texts {
 }
 
 @media only screen and (max-width: 1500px) {
-
-
-
     #title-container {
         width: 100%;
         height: 100vh;
         background-size: cover;
         overflow: hidden;
 
+    }
+
+    #title-container-bottom{
+        top: 70vh;
     }
 
     #midpoint-logo {
@@ -840,26 +883,42 @@ tr #personalization-container-texts {
         font-size: 3.5vw;
     }
 
+    #images-container-elements{
+        grid-gap: 3vh;
+    }
+
+    iframe{
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .texts-under-images h2{
+        font-size: 2.5vh;
+    }
+
+    .desc{
+        font-size: 1.5vh;
+    }
+
     #title {
         font-size: 4vw;
     }
 
-    #circle {
-        position: absolute;
-        top: 20%;
-        left: 25%;
-        width: 50%;
-        z-index: -1;
-        overflow: hidden;
+    #circle img{
+        display: none;
     }
 
-    #bear-container-text-1 {
+    #baloon-container-text-1 {
         font-size: 4.5vw;
         padding: 2%;
         overflow: hidden;
     }
 
-    #bear-container-text-2 {
+    #write-to-us-slogan{
+        font-size: 10vw;
+    }
+
+    #baloon-container-text-2 {
         font-size: 5vw;
     }
 
@@ -874,31 +933,54 @@ tr #personalization-container-texts {
         text-align: center;
     }
 
-    #title-container-elements-personalization {
-        margin-top: 20%;
-    }
-
     #personalization-container-texts {
         margin-bottom: 20%;
     }
 
+    .personalization-photo {
+        width: 20vmin;
+        height: 20vmin;
+        margin: 10%;
+    }
+
     #contact-text-element-2 h2 {
-        font-size: 3vw;
+        font-size: 4vw;
         padding: 0;
         margin: 0;
     }
 
     .slide-photo {
         height: 40vw;
-        width: 130vw;
+        width: 100vw;
         position: relative;
-        left: -15%
     }
 
     #about-text-element p {
         color: black;
         font-size: 2vw;
         margin-top: 3vh;
+    }
+
+    #footer-information{
+        width: 30%;
+    }
+
+    #address{
+        font-size: 2vw;
+    }
+
+    #midpoint-logo-footer img{
+        margin-bottom: 2.5vh;
+    }
+
+    #map{
+        justify-content: right;
+        align-items: center;
+    }
+
+    #map iframe{
+        width: 60vmin;
+        height: 40vmin;
     }
 }
 
@@ -920,13 +1002,6 @@ tr #personalization-container-texts {
 
 .sr-only {
     color: rgb(0, 0, 0);
-}
-
-.desc {
-    font-size: 2vh;
-    overflow: hidden;
-    margin-top: 2vh;
-    text-align: center;
 }
 
 #footer {
@@ -1065,11 +1140,11 @@ tr #personalization-container-texts {
         width: 70.5vw;
     }
 
-    #bear-container-text-1 {
+    #baloon-container-text-1 {
         font-size: 7.5vw;
     }
 
-    #bear-container-text-2 {
+    #baloon-container-text-2 {
         font-size: 7.5vw;
     }
 
@@ -1257,12 +1332,12 @@ tr #personalization-container-texts {
     }
 
 
-    #bear-container-text-1 {
+    #baloon-container-text-1 {
         font-size: 9vw;
     }
 
 
-    #bear-container-text-2 {
+    #baloon-container-text-2 {
         font-size: 10vw;
     }
 
@@ -1283,18 +1358,17 @@ tr #personalization-container-texts {
         z-index: -1;
     }
 
-    #bear-container-text-1 {
+    #baloon-container-text-1 {
         font-size: 6.5vw;
     }
 
-    #bear-container-text-2 {
+    #baloon-container-text-2 {
         font-size: 6vw;
     }
 
     #personalization-container {
         height: 100vh;
         width: 100vw;
-
     }
 
     #personalization-container-texts {
