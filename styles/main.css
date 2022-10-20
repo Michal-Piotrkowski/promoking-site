@@ -157,6 +157,12 @@ table {
     /*Font designed by Vernon Adams, Ben Nathan, Thomas Jockin, Cyreal https://fonts.google.com/specimen/Amatic+SC/about?query=Amatic*/
 }
 
+@font-face {
+    font-family: "Raleway-Thin";
+    src: url("/fonts/Raleway-Thin.ttf") format("truetype");
+    /*Font designed by Matt McInerney, Pablo Impallari, Rodrigo Fuenzalidahttps: //fonts.google.com/specimen/Raleway?query=Matt+McInerney*/
+}
+
 /*FONTS CSS*/
 .inspiration-font-elements {
     color: rgb(255, 255, 255);
@@ -421,6 +427,7 @@ hr {
 
 .texts-under-images {
     margin: 3vh;
+    margin-bottom: 6vh;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -431,7 +438,7 @@ hr {
 }
 
 .amatic-font-offer-elements-black {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway-Thin', sans-serif;
     font-weight: 600;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -445,18 +452,19 @@ hr {
     margin-top: 2vh;
     text-align: center;
     padding: 1px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway-Thin', sans-serif;
     font-weight: 600;
+    line-height: 1.5rem;
 }
 
 p.desc {
     background-color: rgba(255, 255, 255, 0.456);
-    padding: 1%;
+    padding: 3%;
 }
 
 #specs {
     background-color: rgba(255, 255, 255, 0.456);
-    padding: 1%;
+    padding: 3%;
     width: 100vmin;
 }
 
@@ -546,7 +554,7 @@ ul li {
     text-align: center;
     color: black;
     padding: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway-Thin', sans-serif;
     font-weight: 600;
 }
 
@@ -555,6 +563,7 @@ ul li {
     font-size: 1.25vw;
     margin-top: 3vh;
     padding: 1px;
+    line-height: 2rem;
 }
 
 #about-text-element h2 {
@@ -800,7 +809,7 @@ video{
 }
 
 #address {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway-Thin', sans-serif;
     color: white;
     line-height: 200%;
     font-size: 3vmin;
@@ -957,7 +966,7 @@ video{
 
     #about-text-element p {
         color: black;
-        font-size: 2vw;
+        font-size: 2vmin;
         margin-top: 3vh;
     }
 
@@ -1088,21 +1097,28 @@ video{
         font-size: 5vw;
     }
 
+    #scroll-trigger-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200vh;
+    }
+
     #contact-text-element-2 h2 {
-        font-size: 2vh;
+        font-size: 4vh;
     }
 
     #contact-text-element-2 {
         background-color: rgba(255, 255, 255, 0.05);
         position: absolute;
-        top: 50%;
+        top: 60%;
         width: 100%;
         padding-top: 2vh;
         padding-bottom: 2vh;
     }
 
     #write-to-us-slogan {
-        font-size: 9vw;
+        font-size: 8vw;
         transform: rotate(-7deg);
     }
 
@@ -1121,12 +1137,37 @@ video{
         top: 70vh;
     }
 
+    #photos-personalization {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 50%);
+    }
+
     #personalization-container-elements {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column;
         overflow: hidden;
+    }
+
+    .personalization-photo{
+        margin: 0;
+        margin: 2% 0;
+        width: 20vmin;
+    }
+
+    #first-personalization-photos-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #second-personalization-photos-container{
+        display: flex;
+        flex-direction: column;
     }
 
     #circle {
@@ -1136,16 +1177,20 @@ video{
         width: 80vw;
     }
 
+    #personalization-container-texts{
+        left: 15%;
+    }
+
     #personalization-container-texts hr {
         width: 70.5vw;
     }
 
     #baloon-container-text-1 {
-        font-size: 7.5vw;
+        font-size: 5vw;
     }
 
     #baloon-container-text-2 {
-        font-size: 7.5vw;
+        font-size: 5vw;
     }
 
     .material-symbols-outlined {
@@ -1159,11 +1204,16 @@ video{
         background-image: url(/graphics/background-fifth-small.png);
     }
 
+    video{
+        height: 60vmin;
+        margin-top: 5%;
+        z-index: 0;
+    }
+
     .slide-photo {
         height: 60vw;
-        width: 200vw;
+        width: 100vw;
         position: relative;
-        left: -50%;
         top: 20%;
     }
 
@@ -1178,8 +1228,13 @@ video{
         width: 100%;
     }
 
+    #about-text-element{
+        height: 60vmin;
+    }
+
     #about-text-element p {
-        font-size: 3vw;
+        font-size: 2vmin;
+        padding: 1vmin;
     }
 
     #about-text-element h2 {
@@ -1221,8 +1276,14 @@ video{
     }
 
     #map {
-        width: 90vw;
-        margin: 5vw;
+        width: 60vmin;
+        height: 30vmin;
+        margin: 5vmin;
+    }
+
+    #map iframe{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -1331,12 +1392,6 @@ video{
         font-size: 12vw;
     }
 
-
-    #baloon-container-text-1 {
-        font-size: 9vw;
-    }
-
-
     #baloon-container-text-2 {
         font-size: 10vw;
     }
@@ -1372,15 +1427,24 @@ video{
     }
 
     #personalization-container-texts {
+        width: 70%;
         margin-bottom: 20%;
     }
 
+    #images-container-element-1{
+        height: 100vh;
+    }
+
     .images-images {
-        height: 30vh;
+        height: 50vh;
         overflow: hidden;
         display: flex;
         justify-content: center;
+    }
 
+    .images-images img{
+        width: 100%;
+        height: 100%;
     }
 
     .images-container-element {
@@ -1394,21 +1458,23 @@ video{
 
     #text-without-photo {
         top: 30%;
-        width: 60%;
+        width:90%;
         text-align: center;
         position: absolute;
     }
 
     #images-container-element-2 {
+        margin-top: -5%;
+        height: 80vh;
         display: flex;
     }
 
     #about-text-element p {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     #about-text-element h2 {
-        font-size: 15vw;
+        font-size: 8vw;
     }
 
     #about-image-element img {
@@ -1418,14 +1484,25 @@ video{
     #offer-title {
         justify-content: center;
         text-align: center;
-        font-size: 8vw;
+        font-size: 5vw;
         margin: 10vw;
         display: flex;
         width: 100%;
     }
+        
+    #offer-container-video iframe{
+        width: 90vw;
+        height: 50vh;
+    }
 
     #images-container-element-0 {
         display: flex;
+    }
+
+    #images-container-image2{
+       margin-top: 20%;
+       max-height: 70%;
+       max-width: 60%;
     }
 
     #images-container-elements {
@@ -1435,6 +1512,25 @@ video{
         grid-template-rows: repeat(3, 60vh);
         justify-items: center;
         overflow: hidden;
+    }
+
+    .desc{
+        font-size: 1.8vh;
+    }
+
+    li{
+        overflow: hidden;
+    }
+
+    #specs{
+        width: 100%;
+    }
+
+    .slide-photo {
+        height: 50vmin;
+        width: 100vmin;
+        position: relative;
+        top: 20%;
     }
 
     #footer {
@@ -1451,6 +1547,17 @@ video{
     }
 
     #footer-information {
+        width: 100%;
         position: relative;
+    }
+
+    #address{
+        width: 90%;
+        font-size: 3vw;
+    }
+
+    #map{
+        height: 40%;
+        width: 90%;
     }
 }

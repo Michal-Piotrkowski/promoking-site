@@ -30,20 +30,21 @@ gsap.to("#promoking-logo", {
 //     x: "100%"
 // })
 
-gsap.to("#about-text-element", {
 
-
-    scrollTrigger: {
-        trigger: "#about-container",
-        pin: true,   // pin the trigger element while active
-        start: "top top", // when the top of the trigger hits the top of the viewport
-        // end after scrolling 500px beyond the start
-        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-        //markers: true,
-    },
-    x: "100%"
-
-})
+var x = window.matchMedia("(min-width: 850px)")
+if(x.matches){
+    gsap.to("#about-text-element", {
+        scrollTrigger: {
+            trigger: "#about-container",
+            pin: true,   // pin the trigger element while active
+            start: "top top", // when the top of the trigger hits the top of the viewport
+            // end after scrolling 500px beyond the start
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+            //markers: true,
+        },
+        x: "100%"
+    })
+}
 
 
 
@@ -130,16 +131,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".panel");
 
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#scroll-trigger-container",
-    pin: true,
-    scrub: 0.7,
-    snap: 1 / (sections.length - 1),
-    start: "top top",
-    // base vertical scrolling on how wide the container is so it feels more natural.
-    end: "bottom",
-  }
-});
+if(x.matches){
+    gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#scroll-trigger-container",
+        pin: true,
+        scrub: 0.7,
+        snap: 1 / (sections.length - 1),
+        start: "top top",
+        // base vertical scrolling on how wide the container is so it feels more natural.
+        end: "bottom",
+    }
+    });
+}
