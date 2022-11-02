@@ -1357,7 +1357,7 @@ video{
     }
 
     #number {
-        font-size: 14vw;
+        font-size: 12vw;
     }
 
     .offer-container-element {
@@ -1436,7 +1436,6 @@ video{
     }
 
     .images-images {
-        height: 50vh;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -1444,7 +1443,7 @@ video{
 
     .images-images img{
         width: 100%;
-        height: 100%;
+        height: 50%;
     }
 
     .images-container-element {
@@ -1464,13 +1463,41 @@ video{
     }
 
     #images-container-element-2 {
-        margin-top: -5%;
-        height: 80vh;
+        margin-top: -70%;
         display: flex;
     }
 
+    ul li{
+        height: 6vh;
+    }
+
+    #about-container{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+    }
+
+    #about-container-elements{
+        height: 100%;
+    }
+
+    #about-text-element {
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        height: 90%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        color: black;
+        padding: 5vh;
+        font-family: 'Raleway-Thin', sans-serif;
+        font-weight: 600;
+        z-index: 1;
+    }
+
     #about-text-element p {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     #about-text-element h2 {
@@ -1479,6 +1506,23 @@ video{
 
     #about-image-element img {
         display: none;
+    }
+
+    #first-personalization-photos-container{
+        justify-content: center;
+    }
+
+    #second-personalization-photos-container{
+        justify-content: center;
+    }
+
+    .personalization-photos-elements{
+        margin-top: 2vh;
+    }
+
+    .personalization-photos-elements h2 {
+        padding-top: 2vh;
+        font-size: 3vh;
     }
 
     #offer-title {
@@ -1501,8 +1545,8 @@ video{
 
     #images-container-image2{
        margin-top: 20%;
-       max-height: 70%;
-       max-width: 60%;
+       max-height: 60%;
+       max-width: 100%;
     }
 
     #images-container-elements {
@@ -1524,6 +1568,22 @@ video{
 
     #specs{
         width: 100%;
+    }
+
+    #contact-text-element-1{
+        top: 10%;
+        z-index: 1;
+    }
+
+    #contact-container-video {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        height: auto;
+    }
+
+    video{
+        height: 100%;
     }
 
     .slide-photo {
