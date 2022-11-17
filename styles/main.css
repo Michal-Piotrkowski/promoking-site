@@ -1467,6 +1467,8 @@ video{
     #images-container-element-2 {
         margin-top: -70%;
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     ul li{
@@ -1573,9 +1575,17 @@ video{
         width: 100%;
     }
 
+    #scroll-trigger-container{
+        height: 150vh;
+    }
+
     #contact-text-element-1{
         top: 10%;
         z-index: 1;
+    }
+
+    #contact-container{
+        height: 50vh;
     }
 
     #contact-container-video {
@@ -1587,6 +1597,10 @@ video{
 
     video{
         height: 100%;
+    }
+
+    #contact-text-element-2{
+        top: 75%;
     }
 
     .slide-photo {
@@ -1620,7 +1634,7 @@ video{
     }
 
     #map{
-        height: 40%;
+        height: 50%;
         width: 90%;
     }
 }
