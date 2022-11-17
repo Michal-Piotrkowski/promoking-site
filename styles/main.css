@@ -1613,7 +1613,7 @@ video{
     #footer {
         overflow: hidden;
         width: 100%;
-        height: 50vh;
+        height: 65vh;
         background-image: url('/graphics/background-fifth.png');
         background-size: cover;
         position: relative;
