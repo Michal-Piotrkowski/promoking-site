@@ -15,22 +15,6 @@ gsap.to("#promoking-logo", {
     duration: 2, y: "-100%", ease: "bounce"
 })
 
-
-
-
-// gsap.to("#about-image-element", {
-//     scrollTrigger: {
-//         trigger: "#about-container",
-//         pin: true,   // pin the trigger element while active
-//         start: "top top", // when the top of the trigger hits the top of the viewport
-//         // end after scrolling 500px beyond the start
-//         scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//         //markers: true,
-//     },
-//     x: "100%"
-// })
-
-
 var x = window.matchMedia("(min-width: 850px)")
 if(x.matches){
     gsap.to("#about-text-element", {
@@ -45,44 +29,6 @@ if(x.matches){
         x: "100%"
     })
 }
-
-
-
-
-
-
-// gsap.to("#bear-logo", {
-//     scrollTrigger: {
-//         trigger: "#personalization-container",
-//         pin: true,   // pin the trigger element while active
-//         start: "top top", // when the top of the trigger hits the top of the viewport
-//         // end after scrolling 500px beyond the start
-//         scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//         //markers: true,
-//     },
-//     rotation: "180"
-// })
-
-
-
-// gsap.to("#bear-logo", {
-//     scrollTrigger: {
-//         trigger: "#personalization-container",
-//         pin: true,   // pin the trigger element while active
-//         start: "top top", // when the top of the trigger hits the top of the viewport
-//         // end after scrolling 500px beyond the start
-//         scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//         //markers: true,
-//     },
-//     rotation: "360"
-// })
-
-
-
-
-
-
-
 
 //animations for offer
 

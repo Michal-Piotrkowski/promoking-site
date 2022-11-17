@@ -1470,7 +1470,7 @@ video{
     }
 
     ul li{
-        height: 6vh;
+        height: 8vh;
     }
 
     #about-container{
@@ -1556,7 +1556,7 @@ video{
         width: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(3, 60vh);
+        grid-template-rows: repeat(3,90vh);
         justify-items: center;
         overflow: hidden;
     }
