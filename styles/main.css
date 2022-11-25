@@ -233,7 +233,7 @@ hr {
 #title-container {
     width: 100%;
     height: 100vh;
-    background-image: url('/graphics/background-first2.png');
+    background-image: url('/graphics/background-first2.webp');
     background-size: cover;
     overflow: hidden;
 }
@@ -376,7 +376,7 @@ hr {
 /* IMAGES-CONTAINER */
 
 #images-container {
-    background-image: url('/graphics/background-first-offer.jpg');
+    background-image: url('/graphics/background-first-offer.webp');
 }
 
 #images-container-elements {
@@ -481,7 +481,7 @@ ul li {
 #call-container {
     width: 100%;
     height: 30vw;
-    background-image: url('/graphics/background-second.png');
+    background-image: url('/graphics/background-second.webp');
     background-size: cover;
     overflow: hidden;
 }
@@ -520,7 +520,7 @@ ul li {
 /* ABOUT_CONTAINER*/
 
 #about-container {
-    background-image: url('/graphics/background-first-offer.jpg');
+    background-image: url('/graphics/background-first-offer.webp');
 }
 
 #about-container-elements {
@@ -591,7 +591,7 @@ ul li {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url('/graphics/background-fourth.png');
+    background-image: url('/graphics/background-fourth.webp');
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -700,7 +700,7 @@ ul li {
 
 #contact-container {
     width: 100%;
-    background-image: url('/graphics/background-fifth.png');
+    background-image: url('/graphics/background-fifth.webp');
     background-size: cover;
     position: relative;
 }
@@ -797,7 +797,7 @@ video{
 #footer {
     width: 100%;
     height: 35vh;
-    background-image: url('/graphics/background-fifth.png');
+    background-image: url('/graphics/background-fifth.webp');
     background-size: cover;
     position: relative;
 }
@@ -1017,7 +1017,7 @@ video{
     overflow: hidden;
     width: 100%;
     height: 35vw;
-    background-image: url('/graphics/background-fifth.png');
+    background-image: url('/graphics/background-fifth.webp');
     background-size: cover;
     position: relative;
 }
@@ -1201,7 +1201,7 @@ video{
 
 
     #contact-container {
-        background-image: url(/graphics/background-fifth-small.png);
+        background-image: url('/graphics/background-fifth-small.webp');
     }
 
     video{
@@ -1257,7 +1257,7 @@ video{
         overflow: hidden;
         width: 100%;
         height: 40vh;
-        background-image: url('/graphics/background-fifth.png');
+        background-image: url('/graphics/background-fifth.webp');
         background-size: cover;
         position: relative;
     }
@@ -1501,7 +1501,8 @@ video{
     }
 
     #about-text-element p {
-        font-size: 2vw;
+        font-size: 3vw;
+        line-height: 1rem;
     }
 
     #about-text-element h2 {
@@ -1614,7 +1615,7 @@ video{
         overflow: hidden;
         width: 100%;
         height: 65vh;
-        background-image: url('/graphics/background-fifth.png');
+        background-image: url('/graphics/background-fifth.webp');
         background-size: cover;
         position: relative;
     }
