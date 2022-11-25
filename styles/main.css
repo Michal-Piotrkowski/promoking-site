@@ -1289,7 +1289,7 @@ video{
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: portrait){
 
     #logo-and-slogan-container {
         width: 100%;
@@ -1637,5 +1637,10 @@ video{
     #map{
         height: 50%;
         width: 90%;
+    }
+}
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    body{
+        display: none;
     }
 }
