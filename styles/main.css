@@ -228,6 +228,10 @@ hr {
     padding: 0;
 }
 
+#change-orientation {
+    display: none;
+}
+
 /* TITLE CONTAINER */
 
 #title-container {
@@ -1290,7 +1294,9 @@ video{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) and (orientation: portrait){
-
+    #change-orientation {
+        display: none;
+    }
     #logo-and-slogan-container {
         width: 100%;
         text-align: center;
@@ -1639,8 +1645,27 @@ video{
         width: 90%;
     }
 }
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-    body{
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+    #all-container, #images-container, #call-container, #about-container, #scroll-trigger-container, #slider-container, #footer{
         display: none;
+    }
+
+    body{
+        background-image: url('/graphics/background-fifth-small.webp');
+        width: 100%;
+        height: 100%;
+    }
+
+    #change-orientation{
+        display: block;
+        text-align: center;
+        width: 100vw;
+        height: 70vh;
+        font-family: AmaticSC;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        padding: 2px;
+        margin-top: 15%;
     }
 }
